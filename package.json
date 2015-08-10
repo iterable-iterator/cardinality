@@ -26,7 +26,7 @@
 	"bugs": {
 		"url": "https://github.com/aureooms/js-cardinality/issues"
 	},
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"scripts": {
 		"doc": "./node_modules/.bin/groc",
 		"test": "./node_modules/.bin/aureooms-node-package-test",
