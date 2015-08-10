@@ -1,0 +1,18 @@
+{
+	"code": {
+		"test": [
+			"test",
+			"js"
+		],
+		"main": [
+			"js",
+			"dist",
+			"cardinality.js"
+		]
+	},
+	"debug": false,
+	"src": "js/src/",
+	"babel": true,
+	"name": "cardinality",
+	"out": "js/dist/"
+}

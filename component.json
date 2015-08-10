@@ -1,0 +1,11 @@
+{
+	"license": "AGPL-3.0",
+	"scripts": [
+		"js/dist/cardinality.js"
+	],
+	"repo": "aureooms/js-cardinality",
+	"description": "Iterable cardinality code bricks for JavaScript",
+	"name": "aureooms-js-cardinality",
+	"main": "js/dist/cardinality.js",
+	"version": "0.0.0"
+}
