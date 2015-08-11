@@ -7,5 +7,5 @@
 	"description": "Iterable cardinality code bricks for JavaScript",
 	"name": "aureooms-js-cardinality",
 	"main": "js/dist/cardinality.js",
-	"version": "1.0.1"
+	"version": "1.0.2"
 }
