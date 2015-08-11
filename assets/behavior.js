@@ -13,7 +13,7 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "commentsOnly": true,
           "name": "Markdown"
         },
-        "sourcePath": "/home/aureooms/dev/js/js-graph-augment/js-cardinality/README.md",
+        "sourcePath": "/home/aureooms/dev/js/js-cardinality/README.md",
         "projectPath": "README.md",
         "targetPath": "index",
         "pageTitle": "index",
@@ -147,6 +147,244 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
               "depth": 3
             }
           ]
+        }, {
+          "type": "heading",
+          "data": {
+            "level": 2,
+            "title": "Use",
+            "slug": "use"
+          },
+          "depth": 2
+        }
+      ]
+    }, {
+      "type": "folder",
+      "data": {
+        "path": "0-core",
+        "title": "0-core"
+      },
+      "depth": 1,
+      "children": [
+        {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
+            "sourcePath": "/home/aureooms/dev/js/js-cardinality/js/src/0-core/eq.js",
+            "projectPath": "js/src/0-core/eq.js",
+            "targetPath": "0-core/eq",
+            "pageTitle": "0-core/eq",
+            "title": "eq"
+          },
+          "depth": 2,
+          "outline": []
+        }, {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
+            "sourcePath": "/home/aureooms/dev/js/js-cardinality/js/src/0-core/ge.js",
+            "projectPath": "js/src/0-core/ge.js",
+            "targetPath": "0-core/ge",
+            "pageTitle": "0-core/ge",
+            "title": "ge"
+          },
+          "depth": 2,
+          "outline": []
+        }, {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
+            "sourcePath": "/home/aureooms/dev/js/js-cardinality/js/src/0-core/gele.js",
+            "projectPath": "js/src/0-core/gele.js",
+            "targetPath": "0-core/gele",
+            "pageTitle": "0-core/gele",
+            "title": "gele"
+          },
+          "depth": 2,
+          "outline": []
+        }, {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
+            "sourcePath": "/home/aureooms/dev/js/js-cardinality/js/src/0-core/gelt.js",
+            "projectPath": "js/src/0-core/gelt.js",
+            "targetPath": "0-core/gelt",
+            "pageTitle": "0-core/gelt",
+            "title": "gelt"
+          },
+          "depth": 2,
+          "outline": []
+        }, {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
+            "sourcePath": "/home/aureooms/dev/js/js-cardinality/js/src/0-core/gt.js",
+            "projectPath": "js/src/0-core/gt.js",
+            "targetPath": "0-core/gt",
+            "pageTitle": "0-core/gt",
+            "title": "gt"
+          },
+          "depth": 2,
+          "outline": []
+        }, {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
+            "sourcePath": "/home/aureooms/dev/js/js-cardinality/js/src/0-core/gtle.js",
+            "projectPath": "js/src/0-core/gtle.js",
+            "targetPath": "0-core/gtle",
+            "pageTitle": "0-core/gtle",
+            "title": "gtle"
+          },
+          "depth": 2,
+          "outline": []
+        }, {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
+            "sourcePath": "/home/aureooms/dev/js/js-cardinality/js/src/0-core/gtlt.js",
+            "projectPath": "js/src/0-core/gtlt.js",
+            "targetPath": "0-core/gtlt",
+            "pageTitle": "0-core/gtlt",
+            "title": "gtlt"
+          },
+          "depth": 2,
+          "outline": []
+        }, {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
+            "sourcePath": "/home/aureooms/dev/js/js-cardinality/js/src/0-core/le.js",
+            "projectPath": "js/src/0-core/le.js",
+            "targetPath": "0-core/le",
+            "pageTitle": "0-core/le",
+            "title": "le"
+          },
+          "depth": 2,
+          "outline": []
+        }, {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
+            "sourcePath": "/home/aureooms/dev/js/js-cardinality/js/src/0-core/len.js",
+            "projectPath": "js/src/0-core/len.js",
+            "targetPath": "0-core/len",
+            "pageTitle": "0-core/len",
+            "title": "len"
+          },
+          "depth": 2,
+          "outline": []
+        }, {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
+            "sourcePath": "/home/aureooms/dev/js/js-cardinality/js/src/0-core/lt.js",
+            "projectPath": "js/src/0-core/lt.js",
+            "targetPath": "0-core/lt",
+            "pageTitle": "0-core/lt",
+            "title": "lt"
+          },
+          "depth": 2,
+          "outline": []
+        }, {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
+            "sourcePath": "/home/aureooms/dev/js/js-cardinality/js/src/0-core/ne.js",
+            "projectPath": "js/src/0-core/ne.js",
+            "targetPath": "0-core/ne",
+            "pageTitle": "0-core/ne",
+            "title": "ne"
+          },
+          "depth": 2,
+          "outline": []
         }
       ]
     }, {
@@ -161,11 +399,11 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "foldPrefix": "^",
           "name": "JavaScript"
         },
-        "sourcePath": "/home/aureooms/dev/js/js-graph-augment/js-cardinality/js/src/dummy.js",
-        "projectPath": "js/src/dummy.js",
-        "targetPath": "dummy",
-        "pageTitle": "dummy",
-        "title": "dummy"
+        "sourcePath": "/home/aureooms/dev/js/js-cardinality/js/src/1-sugar.js",
+        "projectPath": "js/src/1-sugar.js",
+        "targetPath": "1-sugar",
+        "pageTitle": "1-sugar",
+        "title": "1-sugar"
       },
       "depth": 1,
       "outline": []
