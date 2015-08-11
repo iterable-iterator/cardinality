@@ -111,7 +111,7 @@ let { iter , range , repeat } = require( "aureooms-js-itertools" ) ;
 
 count( iter( "abc" ) ) ; // 3
 
-//  / \   `count( iterable )` will not work loop forever on an infinite
+//  / \   `count( iterable )` will loop forever on an infinite iterable
 // / ! \  without a `length` or `size` property.
 // -----
 
