@@ -1,40 +1,40 @@
 {
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/aureooms/js-cardinality.git"
-  },
-  "dependencies": {},
-  "license": "AGPL-3.0",
-  "spm": {
-    "main": "js/dist/cardinality.js"
-  },
-  "description": "Iterable cardinality code bricks for JavaScript",
-  "keywords": [
-    "bricks",
-    "cardinality",
-    "ender",
-    "iterable",
-    "javascript",
-    "js",
-    "length",
-    "size"
-  ],
-  "devDependencies": {
-    "aureooms-js-itertools": "^1.1.2",
-    "aureooms-node-package": "^5.0.2",
-    "itertools": "0.0.2"
-  },
-  "author": "aureooms",
-  "bugs": {
-    "url": "https://github.com/aureooms/js-cardinality/issues"
-  },
-  "version": "0.0.1",
-  "scripts": {
-    "doc": "./node_modules/.bin/groc",
-    "test": "./node_modules/.bin/aureooms-node-package-test",
-    "build": "./node_modules/.bin/aureooms-node-package-build"
-  },
-  "homepage": "http://aureooms.github.io/js-cardinality/",
-  "name": "aureooms-js-cardinality",
-  "main": "js/dist/cardinality.js"
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/aureooms/js-cardinality.git"
+	},
+	"dependencies": {},
+	"license": "AGPL-3.0",
+	"spm": {
+		"main": "js/dist/cardinality.js"
+	},
+	"description": "Iterable cardinality code bricks for JavaScript",
+	"keywords": [
+		"bricks",
+		"cardinality",
+		"ender",
+		"iterable",
+		"javascript",
+		"js",
+		"length",
+		"size"
+	],
+	"devDependencies": {
+		"aureooms-js-itertools": "^1.1.2",
+		"aureooms-node-package": "^5.0.2",
+		"itertools": "0.0.2"
+	},
+	"author": "aureooms",
+	"bugs": {
+		"url": "https://github.com/aureooms/js-cardinality/issues"
+	},
+	"version": "1.0.0",
+	"scripts": {
+		"doc": "./node_modules/.bin/groc",
+		"test": "./node_modules/.bin/aureooms-node-package-test",
+		"build": "./node_modules/.bin/aureooms-node-package-build"
+	},
+	"homepage": "http://aureooms.github.io/js-cardinality/",
+	"name": "aureooms-js-cardinality",
+	"main": "js/dist/cardinality.js"
 }
