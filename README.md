@@ -111,6 +111,10 @@ let { iter , range , repeat } = require( "aureooms-js-itertools" ) ;
 
 count( iter( "abc" ) ) ; // 3
 
+//  / \   `count( iterable )` will not work loop forever on an infinite
+// / ! \  without a `length` or `size` property.
+// -----
+
 at_most( 10 , repeat( "A" ) ) ; // false
 
 between( 0 , 10000 , range( 0 , 2839 , 1 ) ) ; // true
