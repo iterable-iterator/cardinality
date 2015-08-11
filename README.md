@@ -1,7 +1,13 @@
 [js-cardinality](http://aureooms.github.io/js-cardinality)
 ==
 
-Iterable cardinality code bricks for JavaScript
+Iterable cardinality code bricks for JavaScript.
+Inspired by [this Python library](https://github.com/wbolster/cardinality).
+Parent is [js-library](https://github.com/aureooms/js-library).
+
+```js
+cardinality.count( "abc"[Symbol.iterator]( ) ) ; // 3
+```
 
 [![NPM license](http://img.shields.io/npm/l/aureooms-js-cardinality.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-cardinality/master/LICENSE)
 [![NPM version](http://img.shields.io/npm/v/aureooms-js-cardinality.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-cardinality)
@@ -92,4 +98,38 @@ Alternatively, you can use any tool mentioned [here](http://bower.io/docs/tools/
 ### jam
 ```js
 require( [ "aureooms-js-cardinality" ] , function ( cardinality ) { ... } ) ;
+```
+
+## Use
+
+```js
+let { count , at_least , at_most , between } = cardinality ;
+
+count( "abc" ) ; // 3
+
+let { iter , range , repeat } = require( "aureooms-js-itertools" ) ;
+
+count( iter( "abc" ) ) ; // 3
+
+at_most( 10 , repeat( "A" ) ) ; // false
+
+between( 0 , 10000 , range( 0 , 2839 , 1 ) ) ; // true
+
+at_least( 10 , repeat( "A" ) ) ; // true
+
+// other functions available
+cardinality.len( iterable ) ; // count( iterable )
+
+cardinality.le( n , iterable ) ; // len( iterable ) <= n
+cardinality.lt( n , iterable ) ; // len( iterable )  < n
+cardinality.ge( n , iterable ) ; // len( iterable ) >= n
+cardinality.gt( n , iterable ) ; // len( iterable )  > n
+
+cardinality.gele( m , n , iterable ) ; // m <= len( iterable ) <= n
+cardinality.gelt( m , n , iterable ) ; // m <= len( iterable )  < n
+cardinality.gtle( m , n , iterable ) ; // m  < len( iterable ) <= n
+cardinality.gtlt( m , n , iterable ) ; // m  < len( iterable )  < n
+
+cardinality.eq( n , iterable ) ; // len( iterable ) === n
+cardinality.ne( n , iterable ) ; // len( iterable ) !== n
 ```
