@@ -3,6 +3,8 @@ var itertools = require( "aureooms-js-itertools" ) ;
 
 test( "le" , function ( ) {
 
+	ok( !cardinality.le( 1000 , itertools.repeat( "A" ) ) ) ;
+
 	ok( !cardinality.le( -1 , "" ) ) ;
 	ok( !cardinality.le( -1 , new Set( "" ) ) ) ;
 	ok( !cardinality.le( -1 , itertools.iter( "" ) ) ) ;

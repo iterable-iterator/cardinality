@@ -3,6 +3,8 @@ var itertools = require( "aureooms-js-itertools" ) ;
 
 test( "at_most" , function ( ) {
 
+	ok( !cardinality.at_most( 1000 , itertools.repeat( "A" ) ) ) ;
+
 	ok( !cardinality.at_most( -1 , "" ) ) ;
 	ok( !cardinality.at_most( -1 , new Set( "" ) ) ) ;
 	ok( !cardinality.at_most( -1 , itertools.iter( "" ) ) ) ;

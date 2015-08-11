@@ -3,6 +3,8 @@ var itertools = require( "aureooms-js-itertools" ) ;
 
 test( "ge" , function ( ) {
 
+	ok( cardinality.ge( 1000 , itertools.repeat( "A" ) ) ) ;
+
 	ok( cardinality.ge( -1 , "" ) ) ;
 	ok( cardinality.ge( -1 , new Set( "" ) ) ) ;
 	ok( cardinality.ge( -1 , itertools.iter( "" ) ) ) ;

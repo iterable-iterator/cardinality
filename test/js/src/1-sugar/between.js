@@ -3,6 +3,8 @@ var itertools = require( "aureooms-js-itertools" ) ;
 
 test( "between" , function ( ) {
 
+	ok( !cardinality.between( 0 , 1000 , itertools.repeat( "A" ) ) ) ;
+
 	ok( cardinality.between( -1 , 7 , "" ) ) ;
 	ok( cardinality.between( -1 , 7 , new Set( "" ) ) ) ;
 	ok( cardinality.between( -1 , 7 , itertools.iter( "" ) ) ) ;

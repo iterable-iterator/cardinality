@@ -117,7 +117,7 @@ between( 0 , 10000 , range( 0 , 2839 , 1 ) ) ; // true
 
 at_least( 10 , repeat( "A" ) ) ; // true
 
-// other functions available
+// other available functions
 cardinality.len( iterable ) ; // count( iterable )
 
 cardinality.le( n , iterable ) ; // len( iterable ) <= n
