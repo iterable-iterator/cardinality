@@ -103,7 +103,11 @@ require( [ "aureooms-js-cardinality" ] , function ( cardinality ) { ... } ) ;
 ## Use
 
 ```js
-let { count , at_least , at_most , between } = cardinality ;
+let { count , at_least , at_most , between , empty } = cardinality ;
+
+empty( "" ) ; // true
+
+empty( "abc" ) ; // false
 
 count( "abc" ) ; // 3
 
@@ -115,9 +119,11 @@ count( iter( "abc" ) ) ; // 3
 // / ! \  without a `length` or `size` property.
 // -----
 
+empty( repeat( "A" ) ) ; // false
+
 at_most( 10 , repeat( "A" ) ) ; // false
 
-between( 0 , 10000 , range( 0 , 2839 , 1 ) ) ; // true
+between( 0 , 10000 , range( 2839 ) ) ; // true
 
 at_least( 10 , repeat( "A" ) ) ; // true
 

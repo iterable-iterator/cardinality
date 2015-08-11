@@ -160,6 +160,9 @@
 		exports.at_least = ge;
 		exports.at_most = le;
 		exports.between = gele;
+		exports.empty = function (iterable) {
+			return eq(0, iterable);
+		};
 
 		return exports;
 	};
