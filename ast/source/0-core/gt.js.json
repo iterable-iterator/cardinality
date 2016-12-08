@@ -1,0 +1,316 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportDefaultSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "le",
+            "range": [
+              7,
+              9
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 7
+              },
+              "end": {
+                "line": 1,
+                "column": 9
+              }
+            }
+          },
+          "range": [
+            7,
+            9
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 7
+            },
+            "end": {
+              "line": 1,
+              "column": 9
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "./le",
+        "raw": "'./le'",
+        "range": [
+          15,
+          21
+        ],
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 15
+          },
+          "end": {
+            "line": 1,
+            "column": 21
+          }
+        }
+      },
+      "range": [
+        0,
+        23
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 23
+        }
+      }
+    },
+    {
+      "type": "ExportDefaultDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "gt",
+          "range": [
+            49,
+            51
+          ],
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 24
+            },
+            "end": {
+              "line": 3,
+              "column": 26
+            }
+          }
+        },
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "n",
+            "range": [
+              54,
+              55
+            ],
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 29
+              },
+              "end": {
+                "line": 3,
+                "column": 30
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "iterable",
+            "range": [
+              58,
+              66
+            ],
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 33
+              },
+              "end": {
+                "line": 3,
+                "column": 41
+              }
+            }
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ReturnStatement",
+              "argument": {
+                "type": "UnaryExpression",
+                "operator": "!",
+                "argument": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "le",
+                    "range": [
+                      81,
+                      83
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 5,
+                        "column": 9
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 11
+                      }
+                    }
+                  },
+                  "arguments": [
+                    {
+                      "type": "Identifier",
+                      "name": "n",
+                      "range": [
+                        85,
+                        86
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 5,
+                          "column": 13
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 14
+                        }
+                      }
+                    },
+                    {
+                      "type": "Identifier",
+                      "name": "iterable",
+                      "range": [
+                        89,
+                        97
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 5,
+                          "column": 17
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 25
+                        }
+                      }
+                    }
+                  ],
+                  "range": [
+                    81,
+                    99
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 5,
+                      "column": 9
+                    },
+                    "end": {
+                      "line": 5,
+                      "column": 27
+                    }
+                  }
+                },
+                "prefix": true,
+                "range": [
+                  80,
+                  99
+                ],
+                "loc": {
+                  "start": {
+                    "line": 5,
+                    "column": 8
+                  },
+                  "end": {
+                    "line": 5,
+                    "column": 27
+                  }
+                }
+              },
+              "range": [
+                73,
+                101
+              ],
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 1
+                },
+                "end": {
+                  "line": 5,
+                  "column": 29
+                }
+              }
+            }
+          ],
+          "range": [
+            69,
+            104
+          ],
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 44
+            },
+            "end": {
+              "line": 7,
+              "column": 1
+            }
+          }
+        },
+        "generator": false,
+        "expression": false,
+        "range": [
+          40,
+          104
+        ],
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 15
+          },
+          "end": {
+            "line": 7,
+            "column": 1
+          }
+        },
+        "leadingComments": [],
+        "trailingComments": []
+      },
+      "range": [
+        25,
+        104
+      ],
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 7,
+          "column": 1
+        }
+      }
+    }
+  ],
+  "sourceType": "module",
+  "range": [
+    0,
+    104
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 7,
+      "column": 1
+    }
+  },
+  "comments": []
+}

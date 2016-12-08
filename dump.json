@@ -1,0 +1,1405 @@
+[
+  {
+    "__docId__": 0,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/0-core/eq.js",
+    "memberof": null,
+    "longname": "src/0-core/eq.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 2,
+    "content": "\nexport default function eq ( n , iterable ) {\n\n\tif ( n < 0 || n !== ( n | 0 ) ) return false ;\n\n\tif ( iterable.length !== undefined ) return iterable.length === n ;\n\n\tif ( iterable.size !== undefined ) return iterable.size === n ;\n\n\tconst it = iterable[Symbol.iterator]( ) ;\n\n\tfor ( ; n > 0 ; --n ) if ( it.next( ).done ) return false ;\n\n\treturn it.next( ).done ;\n\n}\n\n\n"
+  },
+  {
+    "__docId__": 1,
+    "kind": "function",
+    "static": true,
+    "variation": null,
+    "name": "eq",
+    "memberof": "src/0-core/eq.js",
+    "longname": "src/0-core/eq.js~eq",
+    "access": null,
+    "export": true,
+    "importPath": "aureooms-js-cardinality/src/0-core/eq.js",
+    "importStyle": "eq",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "params": [
+      {
+        "name": "n",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "iterable",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 2,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/0-core/ge.js",
+    "memberof": null,
+    "longname": "src/0-core/ge.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1,
+    "content": "import gt from './gt' ;\n\nexport default function ge ( n , iterable ) {\n\n\treturn gt( n - 1 , iterable ) ;\n\n}\n"
+  },
+  {
+    "__docId__": 3,
+    "kind": "function",
+    "static": true,
+    "variation": null,
+    "name": "ge",
+    "memberof": "src/0-core/ge.js",
+    "longname": "src/0-core/ge.js~ge",
+    "access": null,
+    "export": true,
+    "importPath": "aureooms-js-cardinality/src/0-core/ge.js",
+    "importStyle": "ge",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "n",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "iterable",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 4,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/0-core/gele.js",
+    "memberof": null,
+    "longname": "src/0-core/gele.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1,
+    "content": "import le from './le' ;\nimport ge from './ge' ;\n\nexport default function gele ( m , n , iterable ) {\n\n\tif ( n < m ) return false ;\n\n\tif ( n < 0 ) return false ;\n\n\tif ( m <= 0 ) return le( n , iterable ) ;\n\n\tif ( n === Infinity ) return ge( m , iterable ) ;\n\n\tif ( iterable.length !== undefined ) return m <= iterable.length && iterable.length <= n ;\n\n\tif ( iterable.size !== undefined ) return m <= iterable.size && iterable.size <= n ;\n\n\tconst it = iterable[Symbol.iterator]( ) ;\n\n\tn -= m ;\n\n\tfor ( ; m > 0 ; --m ) if ( it.next( ).done ) return false ;\n\tfor ( ; n > 0 ; --n ) if ( it.next( ).done ) return true ;\n\n\treturn it.next( ).done ;\n\n}\n\n\n"
+  },
+  {
+    "__docId__": 5,
+    "kind": "function",
+    "static": true,
+    "variation": null,
+    "name": "gele",
+    "memberof": "src/0-core/gele.js",
+    "longname": "src/0-core/gele.js~gele",
+    "access": null,
+    "export": true,
+    "importPath": "aureooms-js-cardinality/src/0-core/gele.js",
+    "importStyle": "gele",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "m",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "n",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "iterable",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 6,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/0-core/gelt.js",
+    "memberof": null,
+    "longname": "src/0-core/gelt.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1,
+    "content": "import gele from './gele' ;\n\nexport default function gelt ( m , n , iterable ) {\n\n\treturn gele( m , n - 1 , iterable ) ;\n\n}\n\n\n"
+  },
+  {
+    "__docId__": 7,
+    "kind": "function",
+    "static": true,
+    "variation": null,
+    "name": "gelt",
+    "memberof": "src/0-core/gelt.js",
+    "longname": "src/0-core/gelt.js~gelt",
+    "access": null,
+    "export": true,
+    "importPath": "aureooms-js-cardinality/src/0-core/gelt.js",
+    "importStyle": "gelt",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "m",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "n",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "iterable",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 8,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/0-core/gt.js",
+    "memberof": null,
+    "longname": "src/0-core/gt.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1,
+    "content": "import le from './le' ;\n\nexport default function gt ( n , iterable ) {\n\n\treturn !le( n , iterable ) ;\n\n}\n"
+  },
+  {
+    "__docId__": 9,
+    "kind": "function",
+    "static": true,
+    "variation": null,
+    "name": "gt",
+    "memberof": "src/0-core/gt.js",
+    "longname": "src/0-core/gt.js~gt",
+    "access": null,
+    "export": true,
+    "importPath": "aureooms-js-cardinality/src/0-core/gt.js",
+    "importStyle": "gt",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "n",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "iterable",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 10,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/0-core/gtle.js",
+    "memberof": null,
+    "longname": "src/0-core/gtle.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1,
+    "content": "import gele from './gele' ;\n\nexport default function gtle ( m , n , iterable ) {\n\n\treturn gele( m + 1 , n , iterable ) ;\n\n}\n"
+  },
+  {
+    "__docId__": 11,
+    "kind": "function",
+    "static": true,
+    "variation": null,
+    "name": "gtle",
+    "memberof": "src/0-core/gtle.js",
+    "longname": "src/0-core/gtle.js~gtle",
+    "access": null,
+    "export": true,
+    "importPath": "aureooms-js-cardinality/src/0-core/gtle.js",
+    "importStyle": "gtle",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "m",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "n",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "iterable",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 12,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/0-core/gtlt.js",
+    "memberof": null,
+    "longname": "src/0-core/gtlt.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1,
+    "content": "import gele from './gele' ;\n\nexport default function gtlt ( m , n , iterable ) {\n\n\treturn gele( m + 1 , n - 1 , iterable ) ;\n\n}\n"
+  },
+  {
+    "__docId__": 13,
+    "kind": "function",
+    "static": true,
+    "variation": null,
+    "name": "gtlt",
+    "memberof": "src/0-core/gtlt.js",
+    "longname": "src/0-core/gtlt.js~gtlt",
+    "access": null,
+    "export": true,
+    "importPath": "aureooms-js-cardinality/src/0-core/gtlt.js",
+    "importStyle": "gtlt",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "m",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "n",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "iterable",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 14,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/0-core/le.js",
+    "memberof": null,
+    "longname": "src/0-core/le.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 2,
+    "content": "\nexport default function le ( n , iterable ) {\n\n\tif ( n < 0 ) return false ;\n\n\tif ( iterable.length !== undefined ) return iterable.length <= n ;\n\n\tif ( iterable.size !== undefined ) return iterable.size <= n ;\n\n\tconst it = iterable[Symbol.iterator]( ) ;\n\n\tfor ( ; n > 0 ; --n ) if ( it.next( ).done ) return true ;\n\n\treturn it.next( ).done ;\n\n}\n\n\n"
+  },
+  {
+    "__docId__": 15,
+    "kind": "function",
+    "static": true,
+    "variation": null,
+    "name": "le",
+    "memberof": "src/0-core/le.js",
+    "longname": "src/0-core/le.js~le",
+    "access": null,
+    "export": true,
+    "importPath": "aureooms-js-cardinality/src/0-core/le.js",
+    "importStyle": "le",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "params": [
+      {
+        "name": "n",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "iterable",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 16,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/0-core/len.js",
+    "memberof": null,
+    "longname": "src/0-core/len.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 2,
+    "content": "\nexport default function len ( iterable ) {\n\n\tif ( iterable.length !== undefined ) return iterable.length ;\n\n\tif ( iterable.size !== undefined ) return iterable.size ;\n\n\tconst it = iterable[Symbol.iterator]( ) ;\n\n\tlet n = 0 ;\n\n\twhile ( !it.next( ).done ) ++n ;\n\n\treturn n ;\n\n}\n\n\n"
+  },
+  {
+    "__docId__": 17,
+    "kind": "function",
+    "static": true,
+    "variation": null,
+    "name": "len",
+    "memberof": "src/0-core/len.js",
+    "longname": "src/0-core/len.js~len",
+    "access": null,
+    "export": true,
+    "importPath": "aureooms-js-cardinality/src/0-core/len.js",
+    "importStyle": "len",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "params": [
+      {
+        "name": "iterable",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 18,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/0-core/lt.js",
+    "memberof": null,
+    "longname": "src/0-core/lt.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1,
+    "content": "import le from './le' ;\n\nexport default function lt ( n , iterable ) {\n\n\treturn le( n - 1 , iterable ) ;\n\n}\n"
+  },
+  {
+    "__docId__": 19,
+    "kind": "function",
+    "static": true,
+    "variation": null,
+    "name": "lt",
+    "memberof": "src/0-core/lt.js",
+    "longname": "src/0-core/lt.js~lt",
+    "access": null,
+    "export": true,
+    "importPath": "aureooms-js-cardinality/src/0-core/lt.js",
+    "importStyle": "lt",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "n",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "iterable",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 20,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/0-core/ne.js",
+    "memberof": null,
+    "longname": "src/0-core/ne.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1,
+    "content": "import eq from './eq' ;\n\nexport default function ne ( n , iterable ) {\n\n\treturn !eq( n , iterable ) ;\n\n}\n"
+  },
+  {
+    "__docId__": 21,
+    "kind": "function",
+    "static": true,
+    "variation": null,
+    "name": "ne",
+    "memberof": "src/0-core/ne.js",
+    "longname": "src/0-core/ne.js~ne",
+    "access": null,
+    "export": true,
+    "importPath": "aureooms-js-cardinality/src/0-core/ne.js",
+    "importStyle": "ne",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "n",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "iterable",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 22,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/1-sugar.js",
+    "memberof": null,
+    "longname": "src/1-sugar.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1,
+    "content": "import { len , ge , le , gele , eq } from './0-core' ;\n\nexport const count = len ;\nexport const at_least = ge ;\nexport const at_most = le ;\nexport const between = gele ;\nexport const empty = ( iterable ) => eq( 0 , iterable ) ;\n"
+  },
+  {
+    "__docId__": 23,
+    "kind": "variable",
+    "static": true,
+    "variation": null,
+    "name": "count",
+    "memberof": "src/1-sugar.js",
+    "longname": "src/1-sugar.js~count",
+    "access": null,
+    "export": true,
+    "importPath": "aureooms-js-cardinality/src/1-sugar.js",
+    "importStyle": "{count}",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 24,
+    "kind": "variable",
+    "static": true,
+    "variation": null,
+    "name": "at_least",
+    "memberof": "src/1-sugar.js",
+    "longname": "src/1-sugar.js~at_least",
+    "access": null,
+    "export": true,
+    "importPath": "aureooms-js-cardinality/src/1-sugar.js",
+    "importStyle": "{at_least}",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 25,
+    "kind": "variable",
+    "static": true,
+    "variation": null,
+    "name": "at_most",
+    "memberof": "src/1-sugar.js",
+    "longname": "src/1-sugar.js~at_most",
+    "access": null,
+    "export": true,
+    "importPath": "aureooms-js-cardinality/src/1-sugar.js",
+    "importStyle": "{at_most}",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 26,
+    "kind": "variable",
+    "static": true,
+    "variation": null,
+    "name": "between",
+    "memberof": "src/1-sugar.js",
+    "longname": "src/1-sugar.js~between",
+    "access": null,
+    "export": true,
+    "importPath": "aureooms-js-cardinality/src/1-sugar.js",
+    "importStyle": "{between}",
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 27,
+    "kind": "variable",
+    "static": true,
+    "variation": null,
+    "name": "empty",
+    "memberof": "src/1-sugar.js",
+    "longname": "src/1-sugar.js~empty",
+    "access": null,
+    "export": true,
+    "importPath": "aureooms-js-cardinality/src/1-sugar.js",
+    "importStyle": "{empty}",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 28,
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/index.js",
+    "memberof": null,
+    "longname": "src/index.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1,
+    "content": "export * from './0-core' ;\nexport * from './1-sugar' ;\n"
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Infinity",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~NaN",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~undefined",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~null",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Object",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~object",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Function",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~function",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Boolean",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~boolean",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Symbol",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Error",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~EvalError",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~InternalError",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~RangeError",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~ReferenceError",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~SyntaxError",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~TypeError",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~URIError",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 49,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Number",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 50,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~number",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 51,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Date",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 52,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~String",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 53,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~string",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 54,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~RegExp",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 55,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Array",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 56,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Int8Array",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 57,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Uint8Array",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 58,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Uint8ClampedArray",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 59,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Int16Array",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 60,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Uint16Array",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 61,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Int32Array",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 62,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Uint32Array",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 63,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Float32Array",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 64,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Float64Array",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 65,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Map",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 66,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Set",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 67,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~WeakMap",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 68,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~WeakSet",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 69,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~ArrayBuffer",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 70,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~DataView",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 71,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~JSON",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 72,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Promise",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 73,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Generator",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 74,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~GeneratorFunction",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 75,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Reflect",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 76,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Proxy",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 78,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "CanvasRenderingContext2D",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~CanvasRenderingContext2D",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 79,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "DocumentFragment",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~DocumentFragment",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 80,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Element",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/Element",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~Element",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 81,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Event",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/Event",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~Event",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 82,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Node",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/Node",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~Node",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 83,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "NodeList",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/NodeList",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~NodeList",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 84,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "XMLHttpRequest",
+    "externalLink": "https://developer.mozilla.org/en/docs/Web/API/XMLHttpRequest",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~XMLHttpRequest",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 85,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "AudioContext",
+    "externalLink": "https://developer.mozilla.org/en/docs/Web/API/AudioContext",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~AudioContext",
+    "access": null,
+    "description": "",
+    "builtinExternal": true
+  }
+]
