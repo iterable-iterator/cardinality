@@ -9,7 +9,7 @@ Parent is [js-library](https://github.com/aureooms/js-library).
 cardinality.count( "abc"[Symbol.iterator]( ) ) ; // 3
 ```
 
-[![NPM license](https://img.shields.io/npm/l/@aureooms/js-cardinality.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-cardinality/master/LICENSE)
+[![License](https://img.shields.io/github/license/aureooms/js-cardinality.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-cardinality/master/LICENSE)
 [![NPM version](https://img.shields.io/npm/v/@aureooms/js-cardinality.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-cardinality)
 [![Build Status](https://img.shields.io/travis/aureooms/js-cardinality.svg?style=flat)](https://travis-ci.org/aureooms/js-cardinality)
 [![Coverage Status](https://img.shields.io/coveralls/aureooms/js-cardinality.svg?style=flat)](https://coveralls.io/r/aureooms/js-cardinality)
