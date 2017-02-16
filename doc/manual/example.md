@@ -7,7 +7,7 @@ empty( "abc" ) ; // false
 
 count( "abc" ) ; // 3
 
-let { iter , range , repeat } = require( "aureooms-js-itertools" ) ;
+let { iter , range , repeat } = require( "@aureooms/js-itertools" ) ;
 
 count( iter( "abc" ) ) ; // 3
 

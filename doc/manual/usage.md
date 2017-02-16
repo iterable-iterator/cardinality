@@ -8,7 +8,7 @@ import 'babel-polyfill' ;
 
 Then
 ```js
-const cardinality = require( 'aureooms-js-cardinality' ) ;
+const cardinality = require( '@aureooms/js-cardinality' ) ;
 // or
-import cardinality from 'aureooms-js-cardinality' ;
+import cardinality from '@aureooms/js-cardinality' ;
 ```

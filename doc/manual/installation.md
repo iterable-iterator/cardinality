@@ -4,10 +4,10 @@ or [npm](https://github.com/npm/npm).
 
 ### jspm
 ```terminal
-jspm install npm:aureooms-js-cardinality
+jspm install npm:@aureooms/js-cardinality
 ```
 
 ### npm
 ```terminal
-npm install aureooms-js-cardinality --save
+npm install @aureooms/js-cardinality --save
 ```
