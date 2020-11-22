@@ -1,4 +1,4 @@
-[@aureooms/js-cardinality](https://aureooms.github.io/js-cardinality)
+:v: [@aureooms/js-cardinality](https://aureooms.github.io/js-cardinality)
 ==
 
 Iterable cardinality library for JavaScript.
