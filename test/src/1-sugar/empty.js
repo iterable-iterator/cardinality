@@ -2,7 +2,7 @@ import test from 'ava' ;
 
 import { iter } from '@aureooms/js-itertools' ;
 
-import { isEmpty } from '../../../src' ;
+import { isEmpty } from "../../../src/index.js" ;
 
 test( "isEmpty" , t => {
 

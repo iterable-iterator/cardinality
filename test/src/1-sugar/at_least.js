@@ -2,7 +2,7 @@ import test from 'ava' ;
 
 import { iter , repeat } from '@aureooms/js-itertools' ;
 
-import { atLeast } from '../../../src' ;
+import { atLeast } from "../../../src/index.js" ;
 
 test( "atLeast" , t => {
 

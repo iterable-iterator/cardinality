@@ -1,5 +1,5 @@
-import le from './le' ;
-import ge from './ge' ;
+import le from "./le.js" ;
+import ge from "./ge.js" ;
 
 /**
  * gele.

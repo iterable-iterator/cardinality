@@ -2,7 +2,7 @@ import test from 'ava' ;
 
 import { iter , repeat } from '@aureooms/js-itertools' ;
 
-import { gt } from '../../../src' ;
+import { gt } from "../../../src/index.js" ;
 
 test( "gt" , t => {
 

@@ -1,2 +1,2 @@
-export * from './core' ;
-export * from './sugar' ;
+export * from "./core/index.js" ;
+export * from "./sugar.js" ;

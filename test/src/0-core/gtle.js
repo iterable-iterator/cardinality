@@ -2,7 +2,7 @@ import test from 'ava' ;
 
 import { iter , repeat } from '@aureooms/js-itertools' ;
 
-import { gtle } from '../../../src' ;
+import { gtle } from "../../../src/index.js" ;
 
 test( "gtle" , t => {
 

@@ -1,4 +1,4 @@
-import gt from './gt' ;
+import gt from "./gt.js" ;
 
 /**
  * ge.

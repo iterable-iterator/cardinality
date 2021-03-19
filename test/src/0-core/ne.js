@@ -2,7 +2,7 @@ import test from 'ava' ;
 
 import { iter , repeat } from '@aureooms/js-itertools' ;
 
-import { ne } from '../../../src' ;
+import { ne } from "../../../src/index.js" ;
 
 test( "ne" , t => {
 

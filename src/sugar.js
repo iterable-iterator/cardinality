@@ -1,4 +1,4 @@
-import { len , ge , le , gele , eq } from './core' ;
+import { len , ge , le , gele , eq } from "./core/index.js" ;
 
 export const count = len ;
 export const atLeast = ge ;

@@ -1,4 +1,4 @@
-import le from './le' ;
+import le from "./le.js" ;
 
 /**
  * lt.

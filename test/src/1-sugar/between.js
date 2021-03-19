@@ -2,7 +2,7 @@ import test from 'ava' ;
 
 import { iter , repeat } from '@aureooms/js-itertools' ;
 
-import { between } from '../../../src' ;
+import { between } from "../../../src/index.js" ;
 
 test( "between" , t => {
 

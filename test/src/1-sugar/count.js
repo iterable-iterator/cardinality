@@ -2,7 +2,7 @@ import test from 'ava' ;
 
 import { iter } from '@aureooms/js-itertools' ;
 
-import { count } from '../../../src' ;
+import { count } from "../../../src/index.js" ;
 
 test( "count" , t => {
 

@@ -1,4 +1,4 @@
-import gele from './gele' ;
+import gele from "./gele.js" ;
 
 /**
  * gtle.
