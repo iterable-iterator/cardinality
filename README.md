@@ -11,7 +11,7 @@ cardinality.count( "abc"[Symbol.iterator]( ) ) ; // 3
 
 [![License](https://img.shields.io/github/license/aureooms/js-cardinality.svg)](https://raw.githubusercontent.com/aureooms/js-cardinality/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@aureooms/js-cardinality.svg)](https://www.npmjs.org/package/@aureooms/js-cardinality)
-[![Build](https://img.shields.io/travis/aureooms/js-cardinality/main.svg)](https://travis-ci.org/aureooms/js-cardinality/branches)
+[![Build](https://img.shields.io/travis/aureooms/js-cardinality/main.svg)](https://travis-ci.com/aureooms/js-cardinality/branches)
 [![Dependencies](https://img.shields.io/david/aureooms/js-cardinality.svg)](https://david-dm.org/aureooms/js-cardinality)
 [![Dev dependencies](https://img.shields.io/david/dev/aureooms/js-cardinality.svg)](https://david-dm.org/aureooms/js-cardinality?type=dev)
 [![GitHub issues](https://img.shields.io/github/issues/aureooms/js-cardinality.svg)](https://github.com/aureooms/js-cardinality/issues)
