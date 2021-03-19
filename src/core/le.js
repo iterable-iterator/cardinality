@@ -1,4 +1,9 @@
-
+/**
+ * le.
+ *
+ * @param {number} n
+ * @param {Iterable} iterable
+ */
 export default function le ( n , iterable ) {
 
 	if ( n < 0 ) return false ;

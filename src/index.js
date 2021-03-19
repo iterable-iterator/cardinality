@@ -1,2 +1,2 @@
-export * from './0-core' ;
-export * from './1-sugar' ;
+export * from './core' ;
+export * from './sugar' ;

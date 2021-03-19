@@ -1,6 +1,13 @@
 import le from './le' ;
 import ge from './ge' ;
 
+/**
+ * gele.
+ *
+ * @param {number} m
+ * @param {number} n
+ * @param {Iterable} iterable
+ */
 export default function gele ( m , n , iterable ) {
 
 	if ( n < m ) return false ;

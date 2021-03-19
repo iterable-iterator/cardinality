@@ -1,7 +1,13 @@
 
+/**
+ * eq.
+ *
+ * @param {number} n
+ * @param {Iterable} iterable
+ */
 export default function eq ( n , iterable ) {
 
-	if ( n < 0 || n !== ( n | 0 ) ) return false ;
+	if ( n < 0 || !Number.isInteger(n) ) return false ;
 
 	if ( iterable.length !== undefined ) return iterable.length === n ;
 

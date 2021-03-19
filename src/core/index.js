@@ -1,0 +1,11 @@
+export {default as eq} from './eq.js';
+export {default as ge} from './ge.js';
+export {default as gele} from './gele.js';
+export {default as gelt} from './gelt.js';
+export {default as gt} from './gt.js';
+export {default as gtle} from './gtle.js';
+export {default as gtlt} from './gtlt.js';
+export {default as le} from './le.js';
+export {default as len} from './len.js';
+export {default as lt} from './lt.js';
+export {default as ne} from './ne.js';

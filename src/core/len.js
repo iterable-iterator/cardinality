@@ -1,4 +1,8 @@
-
+/**
+ * len.
+ *
+ * @param {Iterable} iterable
+ */
 export default function len ( iterable ) {
 
 	if ( iterable.length !== undefined ) return iterable.length ;

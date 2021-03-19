@@ -1,17 +1,17 @@
 import test from 'ava' ;
 
-import { iter , repeat } from '@aureooms/js-itertools' ;
+import { iter } from '@aureooms/js-itertools' ;
 
-import { empty } from '../../../src' ;
+import { isEmpty } from '../../../src' ;
 
-test( "empty" , t => {
+test( "isEmpty" , t => {
 
-	t.true( empty( "" ) ) ;
-	t.true( empty( new Set( "" ) ) ) ;
-	t.true( empty( iter( "" ) ) ) ;
+	t.true( isEmpty( "" ) ) ;
+	t.true( isEmpty( new Set( "" ) ) ) ;
+	t.true( isEmpty( iter( "" ) ) ) ;
 
-	t.true( !empty( "abc" ) ) ;
-	t.true( !empty( new Set( "abc" ) ) ) ;
-	t.true( !empty( iter( "abc" ) ) ) ;
+	t.true( !isEmpty( "abc" ) ) ;
+	t.true( !isEmpty( new Set( "abc" ) ) ) ;
+	t.true( !isEmpty( iter( "abc" ) ) ) ;
 
 } ) ;

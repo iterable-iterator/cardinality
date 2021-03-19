@@ -1,10 +1,10 @@
 # Examples
 ```js
-let { count , at_least , at_most , between , empty } = cardinality ;
+let { count , atLeast , atMost , between , isEmpty } = cardinality ;
 
-empty( "" ) ; // true
+isEmpty( "" ) ; // true
 
-empty( "abc" ) ; // false
+isEmpty( "abc" ) ; // false
 
 count( "abc" ) ; // 3
 
@@ -16,13 +16,13 @@ count( iter( "abc" ) ) ; // 3
 // / ! \  without a `length` or `size` property.
 // -----
 
-empty( repeat( "A" ) ) ; // false
+isEmpty( repeat( "A" ) ) ; // false
 
-at_most( 10 , repeat( "A" ) ) ; // false
+atMost( 10 , repeat( "A" ) ) ; // false
 
 between( 0 , 10000 , range( 2839 ) ) ; // true
 
-at_least( 10 , repeat( "A" ) ) ; // true
+atLeast( 10 , repeat( "A" ) ) ; // true
 
 // other available functions
 cardinality.len( iterable ) ; // count( iterable )
