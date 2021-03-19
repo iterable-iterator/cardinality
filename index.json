@@ -1,0 +1,1385 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/core/eq.js",
+    "content": "/**\n * Eq.\n *\n * @param {number} n\n * @param {Iterable} iterable\n */\nexport default function eq(n, iterable) {\n\tif (n < 0 || !Number.isInteger(n)) return false;\n\n\tif (iterable.length !== undefined) return iterable.length === n;\n\n\tif (iterable.size !== undefined) return iterable.size === n;\n\n\tconst it = iterable[Symbol.iterator]();\n\n\tfor (; n > 0; --n) if (it.next().done) return false;\n\n\treturn it.next().done;\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/js-cardinality/js-cardinality/src/core/eq.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "function",
+    "name": "eq",
+    "memberof": "src/core/eq.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/core/eq.js~eq",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-cardinality/src/core/eq.js",
+    "importStyle": "eq",
+    "description": "Eq.",
+    "lineNumber": 7,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 50,
+    "kind": "file",
+    "name": "src/core/ge.js",
+    "content": "import gt from './gt.js';\n\n/**\n * Ge.\n *\n * @param {number} n\n * @param {Iterable} iterable\n */\nexport default function ge(n, iterable) {\n\treturn gt(n - 1, iterable);\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/js-cardinality/js-cardinality/src/core/ge.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 51,
+    "kind": "function",
+    "name": "ge",
+    "memberof": "src/core/ge.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/core/ge.js~ge",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-cardinality/src/core/ge.js",
+    "importStyle": "ge",
+    "description": "Ge.",
+    "lineNumber": 9,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 52,
+    "kind": "file",
+    "name": "src/core/gele.js",
+    "content": "import le from './le.js';\nimport ge from './ge.js';\n\n/**\n * Gele.\n *\n * @param {number} m\n * @param {number} n\n * @param {Iterable} iterable\n */\nexport default function gele(m, n, iterable) {\n\tif (n < m) return false;\n\n\tif (n < 0) return false;\n\n\tif (m <= 0) return le(n, iterable);\n\n\tif (n === Number.POSITIVE_INFINITY) return ge(m, iterable);\n\n\tif (iterable.length !== undefined)\n\t\treturn m <= iterable.length && iterable.length <= n;\n\n\tif (iterable.size !== undefined)\n\t\treturn m <= iterable.size && iterable.size <= n;\n\n\tconst it = iterable[Symbol.iterator]();\n\n\tn -= m;\n\n\tfor (; m > 0; --m) if (it.next().done) return false;\n\tfor (; n > 0; --n) if (it.next().done) return true;\n\n\treturn it.next().done;\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/js-cardinality/js-cardinality/src/core/gele.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 53,
+    "kind": "function",
+    "name": "gele",
+    "memberof": "src/core/gele.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/core/gele.js~gele",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-cardinality/src/core/gele.js",
+    "importStyle": "gele",
+    "description": "Gele.",
+    "lineNumber": 11,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "m",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 54,
+    "kind": "file",
+    "name": "src/core/gelt.js",
+    "content": "import gele from './gele.js';\n\n/**\n * Gelt.\n *\n * @param {number} m\n * @param {number} n\n * @param {Iterable} iterable\n */\nexport default function gelt(m, n, iterable) {\n\treturn gele(m, n - 1, iterable);\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/js-cardinality/js-cardinality/src/core/gelt.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 55,
+    "kind": "function",
+    "name": "gelt",
+    "memberof": "src/core/gelt.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/core/gelt.js~gelt",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-cardinality/src/core/gelt.js",
+    "importStyle": "gelt",
+    "description": "Gelt.",
+    "lineNumber": 10,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "m",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 56,
+    "kind": "file",
+    "name": "src/core/gt.js",
+    "content": "import le from './le.js';\n\n/**\n * Gt.\n *\n * @param {number} n\n * @param {Iterable} iterable\n */\nexport default function gt(n, iterable) {\n\treturn !le(n, iterable);\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/js-cardinality/js-cardinality/src/core/gt.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 57,
+    "kind": "function",
+    "name": "gt",
+    "memberof": "src/core/gt.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/core/gt.js~gt",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-cardinality/src/core/gt.js",
+    "importStyle": "gt",
+    "description": "Gt.",
+    "lineNumber": 9,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 58,
+    "kind": "file",
+    "name": "src/core/gtle.js",
+    "content": "import gele from './gele.js';\n\n/**\n * Gtle.\n *\n * @param {number} m\n * @param {number} n\n * @param {Iterable} iterable\n */\nexport default function gtle(m, n, iterable) {\n\treturn gele(m + 1, n, iterable);\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/js-cardinality/js-cardinality/src/core/gtle.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 59,
+    "kind": "function",
+    "name": "gtle",
+    "memberof": "src/core/gtle.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/core/gtle.js~gtle",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-cardinality/src/core/gtle.js",
+    "importStyle": "gtle",
+    "description": "Gtle.",
+    "lineNumber": 10,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "m",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 60,
+    "kind": "file",
+    "name": "src/core/gtlt.js",
+    "content": "import gele from './gele.js';\n\n/**\n * Gtlt.\n *\n * @param {number} m\n * @param {number} n\n * @param {Iterable} iterable\n */\nexport default function gtlt(m, n, iterable) {\n\treturn gele(m + 1, n - 1, iterable);\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/js-cardinality/js-cardinality/src/core/gtlt.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 61,
+    "kind": "function",
+    "name": "gtlt",
+    "memberof": "src/core/gtlt.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/core/gtlt.js~gtlt",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-cardinality/src/core/gtlt.js",
+    "importStyle": "gtlt",
+    "description": "Gtlt.",
+    "lineNumber": 10,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "m",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 62,
+    "kind": "file",
+    "name": "src/core/index.js",
+    "content": "export {default as eq} from './eq.js';\nexport {default as ge} from './ge.js';\nexport {default as gele} from './gele.js';\nexport {default as gelt} from './gelt.js';\nexport {default as gt} from './gt.js';\nexport {default as gtle} from './gtle.js';\nexport {default as gtlt} from './gtlt.js';\nexport {default as le} from './le.js';\nexport {default as len} from './len.js';\nexport {default as lt} from './lt.js';\nexport {default as ne} from './ne.js';\n",
+    "static": true,
+    "longname": "/home/runner/work/js-cardinality/js-cardinality/src/core/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 63,
+    "kind": "file",
+    "name": "src/core/le.js",
+    "content": "/**\n * Le.\n *\n * @param {number} n\n * @param {Iterable} iterable\n */\nexport default function le(n, iterable) {\n\tif (n < 0) return false;\n\n\tif (iterable.length !== undefined) return iterable.length <= n;\n\n\tif (iterable.size !== undefined) return iterable.size <= n;\n\n\tconst it = iterable[Symbol.iterator]();\n\n\tfor (; n > 0; --n) if (it.next().done) return true;\n\n\treturn it.next().done;\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/js-cardinality/js-cardinality/src/core/le.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 64,
+    "kind": "function",
+    "name": "le",
+    "memberof": "src/core/le.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/core/le.js~le",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-cardinality/src/core/le.js",
+    "importStyle": "le",
+    "description": "Le.",
+    "lineNumber": 7,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 65,
+    "kind": "file",
+    "name": "src/core/len.js",
+    "content": "/**\n * Len.\n *\n * @param {Iterable} iterable\n */\nexport default function length(iterable) {\n\tif (iterable.length !== undefined) return iterable.length;\n\n\tif (iterable.size !== undefined) return iterable.size;\n\n\tconst it = iterable[Symbol.iterator]();\n\n\tlet n = 0;\n\n\twhile (!it.next().done) ++n;\n\n\treturn n;\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/js-cardinality/js-cardinality/src/core/len.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 66,
+    "kind": "function",
+    "name": "length",
+    "memberof": "src/core/len.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/core/len.js~length",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-cardinality/src/core/len.js",
+    "importStyle": "length",
+    "description": "Len.",
+    "lineNumber": 6,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 67,
+    "kind": "file",
+    "name": "src/core/lt.js",
+    "content": "import le from './le.js';\n\n/**\n * Lt.\n *\n * @param {number} n\n * @param {Iterable} iterable\n */\nexport default function lt(n, iterable) {\n\treturn le(n - 1, iterable);\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/js-cardinality/js-cardinality/src/core/lt.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 68,
+    "kind": "function",
+    "name": "lt",
+    "memberof": "src/core/lt.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/core/lt.js~lt",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-cardinality/src/core/lt.js",
+    "importStyle": "lt",
+    "description": "Lt.",
+    "lineNumber": 9,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 69,
+    "kind": "file",
+    "name": "src/core/ne.js",
+    "content": "import eq from './eq.js';\n\n/**\n * Ne.\n *\n * @param {number} n\n * @param {Iterable} iterable\n */\nexport default function ne(n, iterable) {\n\treturn !eq(n, iterable);\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/js-cardinality/js-cardinality/src/core/ne.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 70,
+    "kind": "function",
+    "name": "ne",
+    "memberof": "src/core/ne.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/core/ne.js~ne",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-cardinality/src/core/ne.js",
+    "importStyle": "ne",
+    "description": "Ne.",
+    "lineNumber": 9,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 71,
+    "kind": "file",
+    "name": "src/index.js",
+    "content": "export * from './core/index.js';\nexport * from './sugar.js';\n",
+    "static": true,
+    "longname": "/home/runner/work/js-cardinality/js-cardinality/src/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 72,
+    "kind": "file",
+    "name": "src/sugar.js",
+    "content": "import {len, ge, le, gele, eq} from './core/index.js';\n\nexport const count = len;\nexport const atLeast = ge;\nexport const atMost = le;\nexport const between = gele;\nexport const isEmpty = (iterable) => eq(0, iterable);\n",
+    "static": true,
+    "longname": "/home/runner/work/js-cardinality/js-cardinality/src/sugar.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 73,
+    "kind": "variable",
+    "name": "count",
+    "memberof": "src/sugar.js",
+    "static": true,
+    "longname": "src/sugar.js~count",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-cardinality/src/sugar.js",
+    "importStyle": "{count}",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 74,
+    "kind": "variable",
+    "name": "atLeast",
+    "memberof": "src/sugar.js",
+    "static": true,
+    "longname": "src/sugar.js~atLeast",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-cardinality/src/sugar.js",
+    "importStyle": "{atLeast}",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 75,
+    "kind": "variable",
+    "name": "atMost",
+    "memberof": "src/sugar.js",
+    "static": true,
+    "longname": "src/sugar.js~atMost",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-cardinality/src/sugar.js",
+    "importStyle": "{atMost}",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 76,
+    "kind": "variable",
+    "name": "between",
+    "memberof": "src/sugar.js",
+    "static": true,
+    "longname": "src/sugar.js~between",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-cardinality/src/sugar.js",
+    "importStyle": "{between}",
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 77,
+    "kind": "function",
+    "name": "isEmpty",
+    "memberof": "src/sugar.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/sugar.js~isEmpty",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-cardinality/src/sugar.js",
+    "importStyle": "{isEmpty}",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "params": [
+      {
+        "name": "iterable",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "kind": "index",
+    "content": ":v: [@aureooms/js-cardinality](https://aureooms.github.io/js-cardinality)\n==\n\nIterable cardinality library for JavaScript.\nInspired by [this Python library](https://github.com/wbolster/cardinality).\nParent is [@aureooms/js-library](https://github.com/aureooms/js-library).\n\n```js\ncardinality.count( \"abc\"[Symbol.iterator]( ) ) ; // 3\n```\n\n[![License](https://img.shields.io/github/license/aureooms/js-cardinality.svg)](https://raw.githubusercontent.com/aureooms/js-cardinality/main/LICENSE)\n[![Version](https://img.shields.io/npm/v/@aureooms/js-cardinality.svg)](https://www.npmjs.org/package/@aureooms/js-cardinality)\n[![Build](https://img.shields.io/travis/aureooms/js-cardinality/main.svg)](https://travis-ci.com/aureooms/js-cardinality/branches)\n[![Dependencies](https://img.shields.io/david/aureooms/js-cardinality.svg)](https://david-dm.org/aureooms/js-cardinality)\n[![Dev dependencies](https://img.shields.io/david/dev/aureooms/js-cardinality.svg)](https://david-dm.org/aureooms/js-cardinality?type=dev)\n[![GitHub issues](https://img.shields.io/github/issues/aureooms/js-cardinality.svg)](https://github.com/aureooms/js-cardinality/issues)\n[![Downloads](https://img.shields.io/npm/dm/@aureooms/js-cardinality.svg)](https://www.npmjs.org/package/@aureooms/js-cardinality)\n\n[![Code issues](https://img.shields.io/codeclimate/issues/aureooms/js-cardinality.svg)](https://codeclimate.com/github/aureooms/js-cardinality/issues)\n[![Code maintainability](https://img.shields.io/codeclimate/maintainability/aureooms/js-cardinality.svg)](https://codeclimate.com/github/aureooms/js-cardinality/trends/churn)\n[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/aureooms/js-cardinality/main.svg)](https://codecov.io/gh/aureooms/js-cardinality)\n[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/aureooms/js-cardinality.svg)](https://codeclimate.com/github/aureooms/js-cardinality/trends/technical_debt)\n[![Documentation](https://aureooms.github.io/js-cardinality/badge.svg)](https://aureooms.github.io/js-cardinality/source.html)\n[![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-cardinality)](https://bundlephobia.com/result?p=@aureooms/js-cardinality)\n",
+    "longname": "/home/runner/work/js-cardinality/js-cardinality/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"@aureooms/js-cardinality\",\n  \"description\": \"Iterable cardinality library for JavaScript\",\n  \"version\": \"3.0.0\",\n  \"license\": \"AGPL-3.0\",\n  \"author\": \"Aurélien Ooms <aurelien.ooms@gmail.com>\",\n  \"homepage\": \"https://aureooms.github.io/js-cardinality\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/aureooms/js-cardinality\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/aureooms/js-cardinality/issues\"\n  },\n  \"keywords\": [\n    \"cardinality\",\n    \"iterable\",\n    \"javascript\",\n    \"js\",\n    \"length\",\n    \"size\"\n  ],\n  \"sideEffects\": false,\n  \"source\": \"src/index.js\",\n  \"main\": \"dist/index.js\",\n  \"module\": \"dist/index.module.js\",\n  \"umd:main\": \"dist/index.umd.js\",\n  \"unpkg\": \"dist/index.umd.js\",\n  \"exports\": {\n    \".\": {\n      \"browser\": \"./dist/index.module.js\",\n      \"umd\": \"./dist/index.umd.js\",\n      \"require\": \"./dist/index.js\",\n      \"default\": \"./dist/index.modern.js\"\n    }\n  },\n  \"files\": [\n    \"dist\"\n  ],\n  \"scripts\": {\n    \"build\": \"NODE_ENV=production microbundle\",\n    \"build-docs\": \"esdoc\",\n    \"build-gh-pages\": \"npm run build-docs\",\n    \"commit-msg\": \"commitlint --edit\",\n    \"cover\": \"c8 --all --src src --reporter=lcov npm test\",\n    \"debug\": \"NODE_ENV=debug npm run test -- -st --fail-fast\",\n    \"dev\": \"npm run lint-config-and-fix && npm run lint-and-fix && npm run cover -- -- -st --fail-fast\",\n    \"install-hooks\": \"husky install\",\n    \"lint\": \"xo\",\n    \"lint-and-fix\": \"npm run lint -- --fix\",\n    \"lint-config\": \"fixpack --dryRun\",\n    \"lint-config-and-fix\": \"fixpack || fixpack\",\n    \"postinstall\": \"npm run install-hooks\",\n    \"postpublish\": \"pinst --enable\",\n    \"precommit\": \"lint-staged\",\n    \"prepare\": \"npm run build\",\n    \"prepublishOnly\": \"pinst --disable\",\n    \"release\": \"np --message ':hatching_chick: release: Bumping to v%s.'\",\n    \"test\": \"ava\",\n    \"travis\": \"npm run lint-config && npm run lint && npm run cover\"\n  },\n  \"dependencies\": {},\n  \"devDependencies\": {\n    \"@aureooms/js-array\": \"4.0.0\",\n    \"@aureooms/js-functools\": \"2.0.3\",\n    \"@aureooms/js-itertools\": \"5.0.1\",\n    \"@babel/core\": \"7.13.10\",\n    \"@babel/preset-env\": \"7.13.10\",\n    \"@babel/register\": \"7.13.8\",\n    \"@commitlint/cli\": \"12.0.1\",\n    \"@js-library/commitlint-config\": \"0.0.4\",\n    \"ava\": \"3.15.0\",\n    \"babel-plugin-transform-remove-console\": \"6.9.4\",\n    \"babel-plugin-unassert\": \"3.0.1\",\n    \"babel-preset-power-assert\": \"3.0.0\",\n    \"c8\": \"7.6.0\",\n    \"coveralls\": \"3.1.0\",\n    \"esdoc\": \"1.1.0\",\n    \"esdoc-inject-script-plugin\": \"1.0.0\",\n    \"esdoc-inject-style-plugin\": \"1.0.0\",\n    \"esdoc-standard-plugin\": \"1.0.0\",\n    \"fixpack\": \"4.0.0\",\n    \"husky\": \"5.1.3\",\n    \"lint-staged\": \"10.5.4\",\n    \"microbundle\": \"0.13.0\",\n    \"np\": \"7.4.0\",\n    \"pinst\": \"2.1.6\",\n    \"power-assert\": \"1.6.1\",\n    \"regenerator-runtime\": \"0.13.7\",\n    \"xo\": \"0.38.2\"\n  },\n  \"ava\": {\n    \"files\": [\n      \"test/src/**/*\"\n    ],\n    \"require\": [\n      \"regenerator-runtime/runtime\",\n      \"@babel/register\"\n    ],\n    \"timeout\": \"1m\",\n    \"concurrency\": 8\n  },\n  \"babel\": {\n    \"sourceMaps\": true,\n    \"presets\": [\n      [\n        \"@babel/preset-env\",\n        {\n          \"targets\": [\n            \"defaults\",\n            \"maintained node versions\"\n          ]\n        }\n      ]\n    ],\n    \"env\": {\n      \"debug\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": \"current node\"\n            }\n          ],\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"test\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": \"current node\"\n            }\n          ],\n          \"babel-preset-power-assert\"\n        ],\n        \"plugins\": [\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ]\n      },\n      \"development\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ],\n        \"plugins\": [\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ]\n      },\n      \"production\": {\n        \"plugins\": [\n          \"babel-plugin-unassert\",\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ]\n      }\n    }\n  },\n  \"lint-staged\": {\n    \"*.js\": [\n      \"npm run lint-and-fix\"\n    ],\n    \"package.json\": [\n      \"npm run lint-config-and-fix\"\n    ]\n  },\n  \"prettier\": {\n    \"trailingComma\": \"all\"\n  },\n  \"xo\": {\n    \"prettier\": true,\n    \"plugins\": [\n      \"unicorn\"\n    ],\n    \"rules\": {\n      \"unicorn/filename-case\": \"off\"\n    },\n    \"overrides\": [\n      {\n        \"files\": [\n          \"doc/**\"\n        ],\n        \"env\": \"browser\"\n      }\n    ]\n  }\n}\n",
+    "longname": "/home/runner/work/js-cardinality/js-cardinality/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manualIndex",
+    "globalIndex": false,
+    "content": null,
+    "longname": "",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/runner/work/js-cardinality/js-cardinality/doc/manual/overview.md",
+    "name": "./doc/manual/overview.md",
+    "content": "# Overview\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/runner/work/js-cardinality/js-cardinality/doc/manual/installation.md",
+    "name": "./doc/manual/installation.md",
+    "content": "# Installation\nCan be managed using\n[jspm](http://jspm.io)\nor [npm](https://github.com/npm/npm).\n\n### jspm\n```terminal\njspm install npm:@aureooms/js-cardinality\n```\n\n### npm\n```terminal\nnpm install @aureooms/js-cardinality --save\n```\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/runner/work/js-cardinality/js-cardinality/doc/manual/usage.md",
+    "name": "./doc/manual/usage.md",
+    "content": "# Usage\nThe code needs a ES2015+ polyfill to work, for example\n[regenerator-runtime/runtime](https://babeljs.io/docs/usage/polyfill).\n```js\nrequire( 'regenerator-runtime/runtime' ) ;\n// or\nimport 'regenerator-runtime/runtime.js' ;\n```\n\nThen\n```js\nconst cardinality = require( '@aureooms/js-cardinality' ) ;\n// or\nimport cardinality from '@aureooms/js-cardinality' ;\n```\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/runner/work/js-cardinality/js-cardinality/doc/manual/example.md",
+    "name": "./doc/manual/example.md",
+    "content": "# Examples\n```js\nlet { count , atLeast , atMost , between , isEmpty } = cardinality ;\n\nisEmpty( \"\" ) ; // true\n\nisEmpty( \"abc\" ) ; // false\n\ncount( \"abc\" ) ; // 3\n\nlet { iter , range , repeat } = require( \"@aureooms/js-itertools\" ) ;\n\ncount( iter( \"abc\" ) ) ; // 3\n\n//  / \\   `count( iterable )` will loop forever on an infinite iterable\n// / ! \\  without a `length` or `size` property.\n// -----\n\nisEmpty( repeat( \"A\" ) ) ; // false\n\natMost( 10 , repeat( \"A\" ) ) ; // false\n\nbetween( 0 , 10000 , range( 2839 ) ) ; // true\n\natLeast( 10 , repeat( \"A\" ) ) ; // true\n\n// other available functions\ncardinality.len( iterable ) ; // count( iterable )\n\ncardinality.le( n , iterable ) ; // len( iterable ) <= n\ncardinality.lt( n , iterable ) ; // len( iterable )  < n\ncardinality.ge( n , iterable ) ; // len( iterable ) >= n\ncardinality.gt( n , iterable ) ; // len( iterable )  > n\n\ncardinality.gele( m , n , iterable ) ; // m <= len( iterable ) <= n\ncardinality.gelt( m , n , iterable ) ; // m <= len( iterable )  < n\ncardinality.gtle( m , n , iterable ) ; // m  < len( iterable ) <= n\ncardinality.gtlt( m , n , iterable ) ; // m  < len( iterable )  < n\n\ncardinality.eq( n , iterable ) ; // len( iterable ) === n\ncardinality.ne( n , iterable ) ; // len( iterable ) !== n\n```\n",
+    "static": true,
+    "access": "public"
+  }
+]

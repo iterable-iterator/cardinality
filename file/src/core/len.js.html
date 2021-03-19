@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <base data-ice="baseUrl" href="../../">
-  <title data-ice="title">src/index.js | @aureooms/js-cardinality</title>
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/core/len.js | @aureooms/js-cardinality</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -49,9 +49,25 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1 data-ice="title">src/index.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">export * from &apos;./core/index.js&apos;;
-export * from &apos;./sugar.js&apos;;
+<div class="content" data-ice="content"><h1 data-ice="title">src/core/len.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * Len.
+ *
+ * @param {Iterable} iterable
+ */
+export default function length(iterable) {
+	if (iterable.length !== undefined) return iterable.length;
+
+	if (iterable.size !== undefined) return iterable.size;
+
+	const it = iterable[Symbol.iterator]();
+
+	let n = 0;
+
+	while (!it.next().done) ++n;
+
+	return n;
+}
 </code></pre>
 
 </div>

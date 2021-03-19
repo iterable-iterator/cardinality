@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <base data-ice="baseUrl" href="../../">
-  <title data-ice="title">src/index.js | @aureooms/js-cardinality</title>
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/core/gele.js | @aureooms/js-cardinality</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -49,9 +49,41 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1 data-ice="title">src/index.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">export * from &apos;./core/index.js&apos;;
-export * from &apos;./sugar.js&apos;;
+<div class="content" data-ice="content"><h1 data-ice="title">src/core/gele.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import le from &apos;./le.js&apos;;
+import ge from &apos;./ge.js&apos;;
+
+/**
+ * Gele.
+ *
+ * @param {number} m
+ * @param {number} n
+ * @param {Iterable} iterable
+ */
+export default function gele(m, n, iterable) {
+	if (n &lt; m) return false;
+
+	if (n &lt; 0) return false;
+
+	if (m &lt;= 0) return le(n, iterable);
+
+	if (n === Number.POSITIVE_INFINITY) return ge(m, iterable);
+
+	if (iterable.length !== undefined)
+		return m &lt;= iterable.length &amp;&amp; iterable.length &lt;= n;
+
+	if (iterable.size !== undefined)
+		return m &lt;= iterable.size &amp;&amp; iterable.size &lt;= n;
+
+	const it = iterable[Symbol.iterator]();
+
+	n -= m;
+
+	for (; m &gt; 0; --m) if (it.next().done) return false;
+	for (; n &gt; 0; --n) if (it.next().done) return true;
+
+	return it.next().done;
+}
 </code></pre>
 
 </div>

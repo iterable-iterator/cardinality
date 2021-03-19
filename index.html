@@ -3,16 +3,12 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl">
-  <title data-ice="title">aureooms/js-cardinality API Document</title>
+  <title data-ice="title">Home | @aureooms/js-cardinality</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
-  
-  
   <script src="script/manual.js"></script>
-<script data-ice="userScript" src="user/script/0-header.js"></script>
-<link data-ice="userStyle" rel="stylesheet" href="user/css/0-style.css">
-</head>
+<link rel="stylesheet" href="./inject/css/0-style.css"><script src="./inject/script/0-header.js"></script><meta name="description" content="Iterable cardinality library for JavaScript"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@aureooms/js-cardinality"><meta property="twitter:description" content="Iterable cardinality library for JavaScript"></head>
 <body class="layout-container" data-ice="rootContainer">
 
 <header>
@@ -20,8 +16,7 @@
   <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
   <a href="identifiers.html">Reference</a>
   <a href="source.html">Source</a>
-  <a href="test.html" data-ice="testLink">Test</a>
-  <a data-ice="repoURL" href="https://github.com/aureooms/js-cardinality.git" class="repo-url-github">Repository</a>
+  
   <div class="search-box">
   <span>
     <img src="./image/search.png">
@@ -29,17 +24,17 @@
   </span>
     <ul class="search-result"></ul>
   </div>
-</header>
+<a style="position:relative; top:3px;" href="https://github.com/aureooms/js-cardinality"><img width="20px" src="./image/github.png"></a></header>
 
 <nav class="navigation" data-ice="nav"><div>
   <ul>
     
-  <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-at_least">at_least</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-at_most">at_most</a></span></span></li>
+  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isEmpty">isEmpty</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-atLeast">atLeast</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-atMost">atMost</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-between">between</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-count">count</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-empty">empty</a></span></span></li>
-<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">0-core</div><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-eq">eq</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core">core</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-eq">eq</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-ge">ge</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-gele">gele</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-gelt">gelt</a></span></span></li>
@@ -47,34 +42,36 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-gtle">gtle</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-gtlt">gtlt</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-le">le</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-len">len</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-length">length</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-lt">lt</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-ne">ne</a></span></span></li>
 </ul>
 </div>
 </nav>
 
-<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="-js-cardinality-https-aureooms-github-io-js-cardinality-"><a href="https://aureooms.github.io/js-cardinality">js-cardinality</a></h1>
-<p>Iterable cardinality library for JavaScript.
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="-v---a-href--https---aureooms-github-io-js-cardinality---aureooms-js-cardinality--a-">:v: <a href="https://aureooms.github.io/js-cardinality">@aureooms/js-cardinality</a></h1><p>Iterable cardinality library for JavaScript.
 Inspired by <a href="https://github.com/wbolster/cardinality">this Python library</a>.
-Parent is <a href="https://github.com/aureooms/js-library">js-library</a>.</p>
+Parent is <a href="https://github.com/aureooms/js-library">@aureooms/js-library</a>.</p>
 <pre><code class="lang-js"><code class="source-code prettyprint">cardinality.count( &quot;abc&quot;[Symbol.iterator]( ) ) ; // 3</code>
 </code></pre>
-<p><a href="https://raw.githubusercontent.com/aureooms/js-cardinality/master/LICENSE"><img src="http://img.shields.io/npm/l/aureooms-js-cardinality.svg?style=flat" alt="NPM license"></a>
-<a href="https://www.npmjs.org/package/aureooms-js-cardinality"><img src="http://img.shields.io/npm/v/aureooms-js-cardinality.svg?style=flat" alt="NPM version"></a>
-<a href="https://travis-ci.org/aureooms/js-cardinality"><img src="http://img.shields.io/travis/aureooms/js-cardinality.svg?style=flat" alt="Build Status"></a>
-<a href="https://coveralls.io/r/aureooms/js-cardinality"><img src="http://img.shields.io/coveralls/aureooms/js-cardinality.svg?style=flat" alt="Coverage Status"></a>
-<a href="https://david-dm.org/aureooms/js-cardinality#info=dependencies"><img src="http://img.shields.io/david/aureooms/js-cardinality.svg?style=flat" alt="Dependencies Status"></a>
-<a href="https://david-dm.org/aureooms/js-cardinality#info=devDependencies"><img src="http://img.shields.io/david/dev/aureooms/js-cardinality.svg?style=flat" alt="devDependencies Status"></a>
-<a href="https://codeclimate.com/github/aureooms/js-cardinality"><img src="http://img.shields.io/codeclimate/github/aureooms/js-cardinality.svg?style=flat" alt="Code Climate"></a>
-<a href="https://www.npmjs.org/package/aureooms-js-cardinality"><img src="http://img.shields.io/npm/dm/aureooms-js-cardinality.svg?style=flat" alt="NPM downloads per month"></a>
-<a href="https://github.com/aureooms/js-cardinality/issues"><img src="http://img.shields.io/github/issues/aureooms/js-cardinality.svg?style=flat" alt="GitHub issues"></a>
-<a href="https://aureooms.github.io/js-cardinality/source.html"><img src="https://aureooms.github.io/js-cardinality/badge.svg" alt="Documentation"></a></p>
+<p><a href="https://raw.githubusercontent.com/aureooms/js-cardinality/main/LICENSE"><img src="https://img.shields.io/github/license/aureooms/js-cardinality.svg" alt="License"></a>
+<a href="https://www.npmjs.org/package/@aureooms/js-cardinality"><img src="https://img.shields.io/npm/v/@aureooms/js-cardinality.svg" alt="Version"></a>
+<a href="https://travis-ci.com/aureooms/js-cardinality/branches"><img src="https://img.shields.io/travis/aureooms/js-cardinality/main.svg" alt="Build"></a>
+<a href="https://david-dm.org/aureooms/js-cardinality"><img src="https://img.shields.io/david/aureooms/js-cardinality.svg" alt="Dependencies"></a>
+<a href="https://david-dm.org/aureooms/js-cardinality?type=dev"><img src="https://img.shields.io/david/dev/aureooms/js-cardinality.svg" alt="Dev dependencies"></a>
+<a href="https://github.com/aureooms/js-cardinality/issues"><img src="https://img.shields.io/github/issues/aureooms/js-cardinality.svg" alt="GitHub issues"></a>
+<a href="https://www.npmjs.org/package/@aureooms/js-cardinality"><img src="https://img.shields.io/npm/dm/@aureooms/js-cardinality.svg" alt="Downloads"></a></p>
+<p><a href="https://codeclimate.com/github/aureooms/js-cardinality/issues"><img src="https://img.shields.io/codeclimate/issues/aureooms/js-cardinality.svg" alt="Code issues"></a>
+<a href="https://codeclimate.com/github/aureooms/js-cardinality/trends/churn"><img src="https://img.shields.io/codeclimate/maintainability/aureooms/js-cardinality.svg" alt="Code maintainability"></a>
+<a href="https://codecov.io/gh/aureooms/js-cardinality"><img src="https://img.shields.io/codecov/c/gh/aureooms/js-cardinality/main.svg" alt="Code coverage (cov)"></a>
+<a href="https://codeclimate.com/github/aureooms/js-cardinality/trends/technical_debt"><img src="https://img.shields.io/codeclimate/tech-debt/aureooms/js-cardinality.svg" alt="Code technical debt"></a>
+<a href="https://aureooms.github.io/js-cardinality/source.html"><img src="https://aureooms.github.io/js-cardinality/badge.svg" alt="Documentation"></a>
+<a href="https://bundlephobia.com/result?p=@aureooms/js-cardinality"><img src="https://img.shields.io/bundlephobia/minzip/@aureooms/js-cardinality" alt="Package size"></a></p>
 </div>
 </div>
 
 <footer class="footer">
-  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.4.8)</span></a>
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
 </footer>
 
 <script src="script/search_index.js"></script>
