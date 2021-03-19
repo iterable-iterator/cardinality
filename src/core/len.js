@@ -1,22 +1,18 @@
 /**
- * len.
+ * Len.
  *
  * @param {Iterable} iterable
  */
-export default function len ( iterable ) {
+export default function length(iterable) {
+	if (iterable.length !== undefined) return iterable.length;
 
-	if ( iterable.length !== undefined ) return iterable.length ;
+	if (iterable.size !== undefined) return iterable.size;
 
-	if ( iterable.size !== undefined ) return iterable.size ;
+	const it = iterable[Symbol.iterator]();
 
-	const it = iterable[Symbol.iterator]( ) ;
+	let n = 0;
 
-	let n = 0 ;
+	while (!it.next().done) ++n;
 
-	while ( !it.next( ).done ) ++n ;
-
-	return n ;
-
+	return n;
 }
-
-

@@ -1,13 +1,11 @@
-import le from "./le.js" ;
+import le from './le.js';
 
 /**
- * lt.
+ * Lt.
  *
  * @param {number} n
  * @param {Iterable} iterable
  */
-export default function lt ( n , iterable ) {
-
-	return le( n - 1 , iterable ) ;
-
+export default function lt(n, iterable) {
+	return le(n - 1, iterable);
 }

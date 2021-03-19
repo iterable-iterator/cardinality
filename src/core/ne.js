@@ -1,13 +1,11 @@
-import eq from "./eq.js" ;
+import eq from './eq.js';
 
 /**
- * ne.
+ * Ne.
  *
  * @param {number} n
  * @param {Iterable} iterable
  */
-export default function ne ( n , iterable ) {
-
-	return !eq( n , iterable ) ;
-
+export default function ne(n, iterable) {
+	return !eq(n, iterable);
 }
