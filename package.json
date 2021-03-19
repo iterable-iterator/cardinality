@@ -115,7 +115,7 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aureooms/js-cardinality.git"
+    "url": "https://github.com/aureooms/js-cardinality"
   },
   "scripts": {
     "build": "babel --delete-dir-on-start --env-name production src -d lib",
