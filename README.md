@@ -1,4 +1,4 @@
-:v: [@aureooms/js-cardinality](https://aureooms.github.io/js-cardinality)
+:v: [@aureooms/js-cardinality](https://make-github-pseudonymous-again.github.io/js-cardinality)
 ==
 
 Iterable cardinality library for JavaScript.
@@ -21,5 +21,5 @@ cardinality.count( "abc"[Symbol.iterator]( ) ) ; // 3
 [![Code maintainability](https://img.shields.io/codeclimate/maintainability/aureooms/js-cardinality.svg)](https://codeclimate.com/github/aureooms/js-cardinality/trends/churn)
 [![Code coverage (cov)](https://img.shields.io/codecov/c/gh/aureooms/js-cardinality/main.svg)](https://codecov.io/gh/aureooms/js-cardinality)
 [![Code technical debt](https://img.shields.io/codeclimate/tech-debt/aureooms/js-cardinality.svg)](https://codeclimate.com/github/aureooms/js-cardinality/trends/technical_debt)
-[![Documentation](https://aureooms.github.io/js-cardinality/badge.svg)](https://aureooms.github.io/js-cardinality/source.html)
+[![Documentation](https://make-github-pseudonymous-again.github.io/js-cardinality/badge.svg)](https://make-github-pseudonymous-again.github.io/js-cardinality/source.html)
 [![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-cardinality)](https://bundlephobia.com/result?p=@aureooms/js-cardinality)
