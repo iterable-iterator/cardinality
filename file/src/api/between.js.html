@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <base data-ice="baseUrl" href="../../">
-  <title data-ice="title">src/index.js | @iterable-iterator/cardinality</title>
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/api/between.js | @iterable-iterator/cardinality</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -49,23 +49,10 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1 data-ice="title">src/index.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">export {default as atLeast} from &apos;./api/atLeast.js&apos;;
-export {default as atMost} from &apos;./api/atMost.js&apos;;
-export {default as between} from &apos;./api/between.js&apos;;
-export {default as count} from &apos;./api/count.js&apos;;
-export {default as isEmpty} from &apos;./api/isEmpty.js&apos;;
-export {default as eq} from &apos;./core/eq.js&apos;;
-export {default as ge} from &apos;./core/ge.js&apos;;
-export {default as gele} from &apos;./core/gele.js&apos;;
-export {default as gelt} from &apos;./core/gelt.js&apos;;
-export {default as gt} from &apos;./core/gt.js&apos;;
-export {default as gtle} from &apos;./core/gtle.js&apos;;
-export {default as gtlt} from &apos;./core/gtlt.js&apos;;
-export {default as le} from &apos;./core/le.js&apos;;
-export {default as len} from &apos;./core/len.js&apos;;
-export {default as lt} from &apos;./core/lt.js&apos;;
-export {default as ne} from &apos;./core/ne.js&apos;;
+<div class="content" data-ice="content"><h1 data-ice="title">src/api/between.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import gele from &apos;../core/gele.js&apos;;
+const between = gele;
+export default between;
 </code></pre>
 
 </div>

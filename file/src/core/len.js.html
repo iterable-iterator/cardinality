@@ -29,7 +29,7 @@
 <nav class="navigation" data-ice="nav"><div>
   <ul>
     
-  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isEmpty">isEmpty</a></span></span></li>
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#api">api</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isEmpty">isEmpty</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-atLeast">atLeast</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-atMost">atMost</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-between">between</a></span></span></li>
@@ -55,7 +55,7 @@
  *
  * @param {Iterable} iterable
  */
-export default function length(iterable) {
+const length = (iterable) =&gt; {
 	if (iterable.length !== undefined) return iterable.length;
 
 	if (iterable.size !== undefined) return iterable.size;
@@ -67,7 +67,9 @@ export default function length(iterable) {
 	while (!it.next().done) ++n;
 
 	return n;
-}
+};
+
+export default length;
 </code></pre>
 
 </div>

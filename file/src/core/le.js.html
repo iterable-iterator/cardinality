@@ -29,7 +29,7 @@
 <nav class="navigation" data-ice="nav"><div>
   <ul>
     
-  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isEmpty">isEmpty</a></span></span></li>
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#api">api</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isEmpty">isEmpty</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-atLeast">atLeast</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-atMost">atMost</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-between">between</a></span></span></li>
@@ -56,7 +56,7 @@
  * @param {number} n
  * @param {Iterable} iterable
  */
-export default function le(n, iterable) {
+const le = (n, iterable) =&gt; {
 	if (n &lt; 0) return false;
 
 	if (iterable.length !== undefined) return iterable.length &lt;= n;
@@ -68,7 +68,9 @@ export default function le(n, iterable) {
 	for (; n &gt; 0; --n) if (it.next().done) return true;
 
 	return it.next().done;
-}
+};
+
+export default le;
 </code></pre>
 
 </div>

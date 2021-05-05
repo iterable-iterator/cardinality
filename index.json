@@ -566,8 +566,179 @@
   {
     "__docId__": 48,
     "kind": "file",
+    "name": "src/api/atLeast.js",
+    "content": "import ge from '../core/ge.js';\nconst atLeast = ge;\nexport default atLeast;\n",
+    "static": true,
+    "longname": "/home/runner/work/cardinality/cardinality/src/api/atLeast.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "variable",
+    "name": "atLeast",
+    "memberof": "src/api/atLeast.js",
+    "static": true,
+    "longname": "src/api/atLeast.js~atLeast",
+    "access": "public",
+    "export": true,
+    "importPath": "@iterable-iterator/cardinality/src/api/atLeast.js",
+    "importStyle": "atLeast",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 50,
+    "kind": "file",
+    "name": "src/api/atMost.js",
+    "content": "import le from '../core/le.js';\nconst atMost = le;\nexport default atMost;\n",
+    "static": true,
+    "longname": "/home/runner/work/cardinality/cardinality/src/api/atMost.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 51,
+    "kind": "variable",
+    "name": "atMost",
+    "memberof": "src/api/atMost.js",
+    "static": true,
+    "longname": "src/api/atMost.js~atMost",
+    "access": "public",
+    "export": true,
+    "importPath": "@iterable-iterator/cardinality/src/api/atMost.js",
+    "importStyle": "atMost",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 52,
+    "kind": "file",
+    "name": "src/api/between.js",
+    "content": "import gele from '../core/gele.js';\nconst between = gele;\nexport default between;\n",
+    "static": true,
+    "longname": "/home/runner/work/cardinality/cardinality/src/api/between.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 53,
+    "kind": "variable",
+    "name": "between",
+    "memberof": "src/api/between.js",
+    "static": true,
+    "longname": "src/api/between.js~between",
+    "access": "public",
+    "export": true,
+    "importPath": "@iterable-iterator/cardinality/src/api/between.js",
+    "importStyle": "between",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 54,
+    "kind": "file",
+    "name": "src/api/count.js",
+    "content": "import len from '../core/len.js';\nconst count = len;\nexport default count;\n",
+    "static": true,
+    "longname": "/home/runner/work/cardinality/cardinality/src/api/count.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 55,
+    "kind": "variable",
+    "name": "count",
+    "memberof": "src/api/count.js",
+    "static": true,
+    "longname": "src/api/count.js~count",
+    "access": "public",
+    "export": true,
+    "importPath": "@iterable-iterator/cardinality/src/api/count.js",
+    "importStyle": "count",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 56,
+    "kind": "file",
+    "name": "src/api/isEmpty.js",
+    "content": "import eq from '../core/eq.js';\n\n/**\n * Returns whether input iterable is empty.\n *\n * @param {Iterable} iterable\n * @return {boolean}\n */\nconst isEmpty = (iterable) => eq(0, iterable);\nexport default isEmpty;\n",
+    "static": true,
+    "longname": "/home/runner/work/cardinality/cardinality/src/api/isEmpty.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 57,
+    "kind": "function",
+    "name": "isEmpty",
+    "memberof": "src/api/isEmpty.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/api/isEmpty.js~isEmpty",
+    "access": "public",
+    "export": true,
+    "importPath": "@iterable-iterator/cardinality/src/api/isEmpty.js",
+    "importStyle": "isEmpty",
+    "description": "Returns whether input iterable is empty.",
+    "lineNumber": 9,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "boolean"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 58,
+    "kind": "file",
     "name": "src/core/eq.js",
-    "content": "/**\n * Eq.\n *\n * @param {number} n\n * @param {Iterable} iterable\n */\nexport default function eq(n, iterable) {\n\tif (n < 0 || !Number.isInteger(n)) return false;\n\n\tif (iterable.length !== undefined) return iterable.length === n;\n\n\tif (iterable.size !== undefined) return iterable.size === n;\n\n\tconst it = iterable[Symbol.iterator]();\n\n\tfor (; n > 0; --n) if (it.next().done) return false;\n\n\treturn it.next().done;\n}\n",
+    "content": "/**\n * Eq.\n *\n * @param {number} n\n * @param {Iterable} iterable\n */\nconst eq = (n, iterable) => {\n\tif (n < 0 || !Number.isInteger(n)) return false;\n\n\tif (iterable.length !== undefined) return iterable.length === n;\n\n\tif (iterable.size !== undefined) return iterable.size === n;\n\n\tconst it = iterable[Symbol.iterator]();\n\n\tfor (; n > 0; --n) if (it.next().done) return false;\n\n\treturn it.next().done;\n};\n\nexport default eq;\n",
     "static": true,
     "longname": "/home/runner/work/cardinality/cardinality/src/core/eq.js",
     "access": "public",
@@ -575,7 +746,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 49,
+    "__docId__": 59,
     "kind": "function",
     "name": "eq",
     "memberof": "src/core/eq.js",
@@ -618,10 +789,10 @@
     }
   },
   {
-    "__docId__": 50,
+    "__docId__": 60,
     "kind": "file",
     "name": "src/core/ge.js",
-    "content": "import gt from './gt.js';\n\n/**\n * Ge.\n *\n * @param {number} n\n * @param {Iterable} iterable\n */\nexport default function ge(n, iterable) {\n\treturn gt(n - 1, iterable);\n}\n",
+    "content": "import gt from './gt.js';\n\n/**\n * Ge.\n *\n * @param {number} n\n * @param {Iterable} iterable\n */\nconst ge = (n, iterable) => gt(n - 1, iterable);\nexport default ge;\n",
     "static": true,
     "longname": "/home/runner/work/cardinality/cardinality/src/core/ge.js",
     "access": "public",
@@ -629,7 +800,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 51,
+    "__docId__": 61,
     "kind": "function",
     "name": "ge",
     "memberof": "src/core/ge.js",
@@ -665,17 +836,13 @@
         "description": ""
       }
     ],
-    "return": {
-      "types": [
-        "*"
-      ]
-    }
+    "return": null
   },
   {
-    "__docId__": 52,
+    "__docId__": 62,
     "kind": "file",
     "name": "src/core/gele.js",
-    "content": "import le from './le.js';\nimport ge from './ge.js';\n\n/**\n * Gele.\n *\n * @param {number} m\n * @param {number} n\n * @param {Iterable} iterable\n */\nexport default function gele(m, n, iterable) {\n\tif (n < m) return false;\n\n\tif (n < 0) return false;\n\n\tif (m <= 0) return le(n, iterable);\n\n\tif (n === Number.POSITIVE_INFINITY) return ge(m, iterable);\n\n\tif (iterable.length !== undefined)\n\t\treturn m <= iterable.length && iterable.length <= n;\n\n\tif (iterable.size !== undefined)\n\t\treturn m <= iterable.size && iterable.size <= n;\n\n\tconst it = iterable[Symbol.iterator]();\n\n\tn -= m;\n\n\tfor (; m > 0; --m) if (it.next().done) return false;\n\tfor (; n > 0; --n) if (it.next().done) return true;\n\n\treturn it.next().done;\n}\n",
+    "content": "import le from './le.js';\nimport ge from './ge.js';\n\n/**\n * Gele.\n *\n * @param {number} m\n * @param {number} n\n * @param {Iterable} iterable\n */\nconst gele = (m, n, iterable) => {\n\tif (n < m) return false;\n\n\tif (n < 0) return false;\n\n\tif (m <= 0) return le(n, iterable);\n\n\tif (n === Number.POSITIVE_INFINITY) return ge(m, iterable);\n\n\tif (iterable.length !== undefined)\n\t\treturn m <= iterable.length && iterable.length <= n;\n\n\tif (iterable.size !== undefined)\n\t\treturn m <= iterable.size && iterable.size <= n;\n\n\tconst it = iterable[Symbol.iterator]();\n\n\tn -= m;\n\n\tfor (; m > 0; --m) if (it.next().done) return false;\n\tfor (; n > 0; --n) if (it.next().done) return true;\n\n\treturn it.next().done;\n};\n\nexport default gele;\n",
     "static": true,
     "longname": "/home/runner/work/cardinality/cardinality/src/core/gele.js",
     "access": "public",
@@ -683,7 +850,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 53,
+    "__docId__": 63,
     "kind": "function",
     "name": "gele",
     "memberof": "src/core/gele.js",
@@ -736,10 +903,10 @@
     }
   },
   {
-    "__docId__": 54,
+    "__docId__": 64,
     "kind": "file",
     "name": "src/core/gelt.js",
-    "content": "import gele from './gele.js';\n\n/**\n * Gelt.\n *\n * @param {number} m\n * @param {number} n\n * @param {Iterable} iterable\n */\nexport default function gelt(m, n, iterable) {\n\treturn gele(m, n - 1, iterable);\n}\n",
+    "content": "import gele from './gele.js';\n\n/**\n * Gelt.\n *\n * @param {number} m\n * @param {number} n\n * @param {Iterable} iterable\n */\nconst gelt = (m, n, iterable) => gele(m, n - 1, iterable);\nexport default gelt;\n",
     "static": true,
     "longname": "/home/runner/work/cardinality/cardinality/src/core/gelt.js",
     "access": "public",
@@ -747,7 +914,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 55,
+    "__docId__": 65,
     "kind": "function",
     "name": "gelt",
     "memberof": "src/core/gelt.js",
@@ -793,17 +960,13 @@
         "description": ""
       }
     ],
-    "return": {
-      "types": [
-        "*"
-      ]
-    }
+    "return": null
   },
   {
-    "__docId__": 56,
+    "__docId__": 66,
     "kind": "file",
     "name": "src/core/gt.js",
-    "content": "import le from './le.js';\n\n/**\n * Gt.\n *\n * @param {number} n\n * @param {Iterable} iterable\n */\nexport default function gt(n, iterable) {\n\treturn !le(n, iterable);\n}\n",
+    "content": "import le from './le.js';\n\n/**\n * Gt.\n *\n * @param {number} n\n * @param {Iterable} iterable\n */\nconst gt = (n, iterable) => !le(n, iterable);\nexport default gt;\n",
     "static": true,
     "longname": "/home/runner/work/cardinality/cardinality/src/core/gt.js",
     "access": "public",
@@ -811,7 +974,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 57,
+    "__docId__": 67,
     "kind": "function",
     "name": "gt",
     "memberof": "src/core/gt.js",
@@ -847,17 +1010,13 @@
         "description": ""
       }
     ],
-    "return": {
-      "types": [
-        "*"
-      ]
-    }
+    "return": null
   },
   {
-    "__docId__": 58,
+    "__docId__": 68,
     "kind": "file",
     "name": "src/core/gtle.js",
-    "content": "import gele from './gele.js';\n\n/**\n * Gtle.\n *\n * @param {number} m\n * @param {number} n\n * @param {Iterable} iterable\n */\nexport default function gtle(m, n, iterable) {\n\treturn gele(m + 1, n, iterable);\n}\n",
+    "content": "import gele from './gele.js';\n\n/**\n * Gtle.\n *\n * @param {number} m\n * @param {number} n\n * @param {Iterable} iterable\n */\nconst gtle = (m, n, iterable) => gele(m + 1, n, iterable);\nexport default gtle;\n",
     "static": true,
     "longname": "/home/runner/work/cardinality/cardinality/src/core/gtle.js",
     "access": "public",
@@ -865,7 +1024,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 59,
+    "__docId__": 69,
     "kind": "function",
     "name": "gtle",
     "memberof": "src/core/gtle.js",
@@ -911,17 +1070,13 @@
         "description": ""
       }
     ],
-    "return": {
-      "types": [
-        "*"
-      ]
-    }
+    "return": null
   },
   {
-    "__docId__": 60,
+    "__docId__": 70,
     "kind": "file",
     "name": "src/core/gtlt.js",
-    "content": "import gele from './gele.js';\n\n/**\n * Gtlt.\n *\n * @param {number} m\n * @param {number} n\n * @param {Iterable} iterable\n */\nexport default function gtlt(m, n, iterable) {\n\treturn gele(m + 1, n - 1, iterable);\n}\n",
+    "content": "import gele from './gele.js';\n\n/**\n * Gtlt.\n *\n * @param {number} m\n * @param {number} n\n * @param {Iterable} iterable\n */\nconst gtlt = (m, n, iterable) => gele(m + 1, n - 1, iterable);\nexport default gtlt;\n",
     "static": true,
     "longname": "/home/runner/work/cardinality/cardinality/src/core/gtlt.js",
     "access": "public",
@@ -929,7 +1084,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 61,
+    "__docId__": 71,
     "kind": "function",
     "name": "gtlt",
     "memberof": "src/core/gtlt.js",
@@ -975,28 +1130,13 @@
         "description": ""
       }
     ],
-    "return": {
-      "types": [
-        "*"
-      ]
-    }
+    "return": null
   },
   {
-    "__docId__": 62,
-    "kind": "file",
-    "name": "src/core/index.js",
-    "content": "export {default as eq} from './eq.js';\nexport {default as ge} from './ge.js';\nexport {default as gele} from './gele.js';\nexport {default as gelt} from './gelt.js';\nexport {default as gt} from './gt.js';\nexport {default as gtle} from './gtle.js';\nexport {default as gtlt} from './gtlt.js';\nexport {default as le} from './le.js';\nexport {default as len} from './len.js';\nexport {default as lt} from './lt.js';\nexport {default as ne} from './ne.js';\n",
-    "static": true,
-    "longname": "/home/runner/work/cardinality/cardinality/src/core/index.js",
-    "access": "public",
-    "description": null,
-    "lineNumber": 1
-  },
-  {
-    "__docId__": 63,
+    "__docId__": 72,
     "kind": "file",
     "name": "src/core/le.js",
-    "content": "/**\n * Le.\n *\n * @param {number} n\n * @param {Iterable} iterable\n */\nexport default function le(n, iterable) {\n\tif (n < 0) return false;\n\n\tif (iterable.length !== undefined) return iterable.length <= n;\n\n\tif (iterable.size !== undefined) return iterable.size <= n;\n\n\tconst it = iterable[Symbol.iterator]();\n\n\tfor (; n > 0; --n) if (it.next().done) return true;\n\n\treturn it.next().done;\n}\n",
+    "content": "/**\n * Le.\n *\n * @param {number} n\n * @param {Iterable} iterable\n */\nconst le = (n, iterable) => {\n\tif (n < 0) return false;\n\n\tif (iterable.length !== undefined) return iterable.length <= n;\n\n\tif (iterable.size !== undefined) return iterable.size <= n;\n\n\tconst it = iterable[Symbol.iterator]();\n\n\tfor (; n > 0; --n) if (it.next().done) return true;\n\n\treturn it.next().done;\n};\n\nexport default le;\n",
     "static": true,
     "longname": "/home/runner/work/cardinality/cardinality/src/core/le.js",
     "access": "public",
@@ -1004,7 +1144,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 64,
+    "__docId__": 73,
     "kind": "function",
     "name": "le",
     "memberof": "src/core/le.js",
@@ -1047,10 +1187,10 @@
     }
   },
   {
-    "__docId__": 65,
+    "__docId__": 74,
     "kind": "file",
     "name": "src/core/len.js",
-    "content": "/**\n * Len.\n *\n * @param {Iterable} iterable\n */\nexport default function length(iterable) {\n\tif (iterable.length !== undefined) return iterable.length;\n\n\tif (iterable.size !== undefined) return iterable.size;\n\n\tconst it = iterable[Symbol.iterator]();\n\n\tlet n = 0;\n\n\twhile (!it.next().done) ++n;\n\n\treturn n;\n}\n",
+    "content": "/**\n * Len.\n *\n * @param {Iterable} iterable\n */\nconst length = (iterable) => {\n\tif (iterable.length !== undefined) return iterable.length;\n\n\tif (iterable.size !== undefined) return iterable.size;\n\n\tconst it = iterable[Symbol.iterator]();\n\n\tlet n = 0;\n\n\twhile (!it.next().done) ++n;\n\n\treturn n;\n};\n\nexport default length;\n",
     "static": true,
     "longname": "/home/runner/work/cardinality/cardinality/src/core/len.js",
     "access": "public",
@@ -1058,7 +1198,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 66,
+    "__docId__": 75,
     "kind": "function",
     "name": "length",
     "memberof": "src/core/len.js",
@@ -1091,10 +1231,10 @@
     }
   },
   {
-    "__docId__": 67,
+    "__docId__": 76,
     "kind": "file",
     "name": "src/core/lt.js",
-    "content": "import le from './le.js';\n\n/**\n * Lt.\n *\n * @param {number} n\n * @param {Iterable} iterable\n */\nexport default function lt(n, iterable) {\n\treturn le(n - 1, iterable);\n}\n",
+    "content": "import le from './le.js';\n\n/**\n * Lt.\n *\n * @param {number} n\n * @param {Iterable} iterable\n */\nconst lt = (n, iterable) => le(n - 1, iterable);\nexport default lt;\n",
     "static": true,
     "longname": "/home/runner/work/cardinality/cardinality/src/core/lt.js",
     "access": "public",
@@ -1102,7 +1242,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 68,
+    "__docId__": 77,
     "kind": "function",
     "name": "lt",
     "memberof": "src/core/lt.js",
@@ -1138,17 +1278,13 @@
         "description": ""
       }
     ],
-    "return": {
-      "types": [
-        "*"
-      ]
-    }
+    "return": null
   },
   {
-    "__docId__": 69,
+    "__docId__": 78,
     "kind": "file",
     "name": "src/core/ne.js",
-    "content": "import eq from './eq.js';\n\n/**\n * Ne.\n *\n * @param {number} n\n * @param {Iterable} iterable\n */\nexport default function ne(n, iterable) {\n\treturn !eq(n, iterable);\n}\n",
+    "content": "import eq from './eq.js';\n\n/**\n * Ne.\n *\n * @param {number} n\n * @param {Iterable} iterable\n */\nconst ne = (n, iterable) => !eq(n, iterable);\nexport default ne;\n",
     "static": true,
     "longname": "/home/runner/work/cardinality/cardinality/src/core/ne.js",
     "access": "public",
@@ -1156,7 +1292,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 70,
+    "__docId__": 79,
     "kind": "function",
     "name": "ne",
     "memberof": "src/core/ne.js",
@@ -1192,139 +1328,18 @@
         "description": ""
       }
     ],
-    "return": {
-      "types": [
-        "*"
-      ]
-    }
+    "return": null
   },
   {
-    "__docId__": 71,
+    "__docId__": 80,
     "kind": "file",
     "name": "src/index.js",
-    "content": "export * from './core/index.js';\nexport * from './sugar.js';\n",
+    "content": "export {default as atLeast} from './api/atLeast.js';\nexport {default as atMost} from './api/atMost.js';\nexport {default as between} from './api/between.js';\nexport {default as count} from './api/count.js';\nexport {default as isEmpty} from './api/isEmpty.js';\nexport {default as eq} from './core/eq.js';\nexport {default as ge} from './core/ge.js';\nexport {default as gele} from './core/gele.js';\nexport {default as gelt} from './core/gelt.js';\nexport {default as gt} from './core/gt.js';\nexport {default as gtle} from './core/gtle.js';\nexport {default as gtlt} from './core/gtlt.js';\nexport {default as le} from './core/le.js';\nexport {default as len} from './core/len.js';\nexport {default as lt} from './core/lt.js';\nexport {default as ne} from './core/ne.js';\n",
     "static": true,
     "longname": "/home/runner/work/cardinality/cardinality/src/index.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
-  },
-  {
-    "__docId__": 72,
-    "kind": "file",
-    "name": "src/sugar.js",
-    "content": "import {len, ge, le, gele, eq} from './core/index.js';\n\nexport const count = len;\nexport const atLeast = ge;\nexport const atMost = le;\nexport const between = gele;\nexport const isEmpty = (iterable) => eq(0, iterable);\n",
-    "static": true,
-    "longname": "/home/runner/work/cardinality/cardinality/src/sugar.js",
-    "access": "public",
-    "description": null,
-    "lineNumber": 1
-  },
-  {
-    "__docId__": 73,
-    "kind": "variable",
-    "name": "count",
-    "memberof": "src/sugar.js",
-    "static": true,
-    "longname": "src/sugar.js~count",
-    "access": "public",
-    "export": true,
-    "importPath": "@iterable-iterator/cardinality/src/sugar.js",
-    "importStyle": "{count}",
-    "description": null,
-    "lineNumber": 3,
-    "undocument": true,
-    "type": {
-      "types": [
-        "*"
-      ]
-    }
-  },
-  {
-    "__docId__": 74,
-    "kind": "variable",
-    "name": "atLeast",
-    "memberof": "src/sugar.js",
-    "static": true,
-    "longname": "src/sugar.js~atLeast",
-    "access": "public",
-    "export": true,
-    "importPath": "@iterable-iterator/cardinality/src/sugar.js",
-    "importStyle": "{atLeast}",
-    "description": null,
-    "lineNumber": 4,
-    "undocument": true,
-    "type": {
-      "types": [
-        "*"
-      ]
-    }
-  },
-  {
-    "__docId__": 75,
-    "kind": "variable",
-    "name": "atMost",
-    "memberof": "src/sugar.js",
-    "static": true,
-    "longname": "src/sugar.js~atMost",
-    "access": "public",
-    "export": true,
-    "importPath": "@iterable-iterator/cardinality/src/sugar.js",
-    "importStyle": "{atMost}",
-    "description": null,
-    "lineNumber": 5,
-    "undocument": true,
-    "type": {
-      "types": [
-        "*"
-      ]
-    }
-  },
-  {
-    "__docId__": 76,
-    "kind": "variable",
-    "name": "between",
-    "memberof": "src/sugar.js",
-    "static": true,
-    "longname": "src/sugar.js~between",
-    "access": "public",
-    "export": true,
-    "importPath": "@iterable-iterator/cardinality/src/sugar.js",
-    "importStyle": "{between}",
-    "description": null,
-    "lineNumber": 6,
-    "undocument": true,
-    "type": {
-      "types": [
-        "*"
-      ]
-    }
-  },
-  {
-    "__docId__": 77,
-    "kind": "function",
-    "name": "isEmpty",
-    "memberof": "src/sugar.js",
-    "generator": false,
-    "async": false,
-    "static": true,
-    "longname": "src/sugar.js~isEmpty",
-    "access": "public",
-    "export": true,
-    "importPath": "@iterable-iterator/cardinality/src/sugar.js",
-    "importStyle": "{isEmpty}",
-    "description": null,
-    "lineNumber": 7,
-    "undocument": true,
-    "params": [
-      {
-        "name": "iterable",
-        "types": [
-          "*"
-        ]
-      }
-    ],
-    "return": null
   },
   {
     "kind": "index",
@@ -1336,7 +1351,7 @@
   },
   {
     "kind": "packageJSON",
-    "content": "{\n  \"name\": \"@iterable-iterator/cardinality\",\n  \"description\": \"Iterable cardinality library for JavaScript\",\n  \"version\": \"3.0.2\",\n  \"license\": \"AGPL-3.0\",\n  \"author\": \"Aurélien Ooms <aurelien.ooms@gmail.com>\",\n  \"homepage\": \"https://iterable-iterator.github.io/cardinality\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/iterable-iterator/cardinality\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/iterable-iterator/cardinality/issues\"\n  },\n  \"keywords\": [\n    \"cardinality\",\n    \"iterable\",\n    \"javascript\",\n    \"js\",\n    \"length\",\n    \"size\"\n  ],\n  \"sideEffects\": false,\n  \"source\": \"src/index.js\",\n  \"main\": \"dist/index.js\",\n  \"module\": \"dist/index.module.js\",\n  \"esmodule\": \"dist/index.modern.js\",\n  \"umd:main\": \"dist/index.umd.js\",\n  \"unpkg\": \"dist/index.umd.js\",\n  \"exports\": {\n    \".\": {\n      \"browser\": \"./dist/index.module.js\",\n      \"umd\": \"./dist/index.umd.js\",\n      \"require\": \"./dist/index.js\",\n      \"default\": \"./dist/index.modern.js\"\n    }\n  },\n  \"files\": [\n    \"dist\"\n  ],\n  \"scripts\": {\n    \"build\": \"NODE_ENV=production microbundle\",\n    \"build-docs\": \"esdoc\",\n    \"build-gh-pages\": \"npm run build-docs\",\n    \"ci:test\": \"npm run lint-config && npm run lint && npm run cover\",\n    \"commit-msg\": \"commitlint --edit\",\n    \"cover\": \"NODE_ENV=cover c8 --all --src src --reporter lcov --reporter text-summary --reporter text npm test\",\n    \"debug\": \"NODE_ENV=debug npm run test -- -st --fail-fast\",\n    \"dev\": \"npm run lint-config-and-fix && npm run lint-and-fix && npm run cover -- -- -st --fail-fast\",\n    \"install-hooks\": \"husky install\",\n    \"lint\": \"xo\",\n    \"lint-and-fix\": \"npm run lint -- --fix\",\n    \"lint-config\": \"fixpack --dryRun\",\n    \"lint-config-and-fix\": \"fixpack || fixpack\",\n    \"postinstall\": \"npm run install-hooks\",\n    \"postpublish\": \"pinst --enable\",\n    \"precommit\": \"lint-staged\",\n    \"prepare\": \"npm run build\",\n    \"prepublishOnly\": \"pinst --disable\",\n    \"release\": \"np --message ':hatching_chick: release: Bumping to v%s.'\",\n    \"test\": \"ava\"\n  },\n  \"dependencies\": {},\n  \"devDependencies\": {\n    \"@babel/core\": \"7.14.0\",\n    \"@babel/preset-env\": \"7.14.1\",\n    \"@babel/register\": \"7.13.16\",\n    \"@commitlint/cli\": \"12.1.1\",\n    \"@iterable-iterator/iter\": \"^0.0.2\",\n    \"@iterable-iterator/repeat\": \"^0.0.1\",\n    \"@js-library/commitlint-config\": \"0.0.4\",\n    \"ava\": \"3.15.0\",\n    \"babel-plugin-transform-remove-console\": \"6.9.4\",\n    \"babel-plugin-unassert\": \"3.0.1\",\n    \"babel-preset-power-assert\": \"3.0.0\",\n    \"c8\": \"7.7.2\",\n    \"coveralls\": \"3.1.0\",\n    \"esdoc\": \"1.1.0\",\n    \"esdoc-inject-script-plugin\": \"1.0.0\",\n    \"esdoc-inject-style-plugin\": \"1.0.0\",\n    \"esdoc-standard-plugin\": \"1.0.0\",\n    \"fixpack\": \"4.0.0\",\n    \"husky\": \"6.0.0\",\n    \"lint-staged\": \"10.5.4\",\n    \"microbundle\": \"0.13.0\",\n    \"np\": \"7.5.0\",\n    \"pinst\": \"2.1.6\",\n    \"power-assert\": \"1.6.1\",\n    \"regenerator-runtime\": \"0.13.7\",\n    \"xo\": \"0.39.1\"\n  },\n  \"ava\": {\n    \"files\": [\n      \"test/src/**/*\"\n    ],\n    \"require\": [\n      \"regenerator-runtime/runtime\",\n      \"@babel/register\"\n    ],\n    \"timeout\": \"1m\",\n    \"concurrency\": 8\n  },\n  \"babel\": {\n    \"sourceMaps\": true,\n    \"presets\": [\n      [\n        \"@babel/preset-env\",\n        {\n          \"targets\": \"current node\"\n        }\n      ]\n    ],\n    \"plugins\": [\n      [\n        \"transform-remove-console\",\n        {\n          \"exclude\": [\n            \"log\",\n            \"error\",\n            \"warn\"\n          ]\n        }\n      ]\n    ],\n    \"env\": {\n      \"debug\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ],\n        \"plugins\": [\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"debug\",\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ]\n      },\n      \"test\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"cover\": {\n        \"sourceMaps\": \"both\",\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"development\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": [\n                \"defaults\",\n                \"maintained node versions\"\n              ]\n            }\n          ],\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"production\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": [\n                \"defaults\",\n                \"maintained node versions\"\n              ]\n            }\n          ]\n        ],\n        \"plugins\": [\n          \"babel-plugin-unassert\"\n        ]\n      }\n    }\n  },\n  \"lint-staged\": {\n    \"*.js\": [\n      \"npm run lint-and-fix\"\n    ],\n    \"package.json\": [\n      \"npm run lint-config-and-fix\"\n    ]\n  },\n  \"prettier\": {\n    \"trailingComma\": \"all\"\n  },\n  \"xo\": {\n    \"prettier\": true,\n    \"plugins\": [\n      \"unicorn\"\n    ],\n    \"rules\": {\n      \"unicorn/filename-case\": \"off\"\n    },\n    \"overrides\": [\n      {\n        \"files\": [\n          \"doc/**\"\n        ],\n        \"env\": \"browser\"\n      }\n    ]\n  }\n}\n",
+    "content": "{\n  \"name\": \"@iterable-iterator/cardinality\",\n  \"description\": \"Iterable cardinality library for JavaScript\",\n  \"version\": \"3.0.3\",\n  \"license\": \"AGPL-3.0\",\n  \"author\": \"Aurélien Ooms <aurelien.ooms@gmail.com>\",\n  \"homepage\": \"https://iterable-iterator.github.io/cardinality\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/iterable-iterator/cardinality\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/iterable-iterator/cardinality/issues\"\n  },\n  \"keywords\": [\n    \"cardinality\",\n    \"iterable\",\n    \"javascript\",\n    \"js\",\n    \"length\",\n    \"size\"\n  ],\n  \"sideEffects\": false,\n  \"source\": \"src/index.js\",\n  \"main\": \"dist/index.js\",\n  \"module\": \"dist/index.module.js\",\n  \"esmodule\": \"dist/index.modern.js\",\n  \"umd:main\": \"dist/index.umd.js\",\n  \"unpkg\": \"dist/index.umd.js\",\n  \"exports\": {\n    \".\": {\n      \"browser\": \"./dist/index.module.js\",\n      \"umd\": \"./dist/index.umd.js\",\n      \"require\": \"./dist/index.js\",\n      \"default\": \"./dist/index.modern.js\"\n    }\n  },\n  \"files\": [\n    \"dist\"\n  ],\n  \"scripts\": {\n    \"build\": \"NODE_ENV=production microbundle\",\n    \"build-docs\": \"esdoc\",\n    \"build-gh-pages\": \"npm run build-docs\",\n    \"ci:test\": \"npm run lint-config && npm run lint && npm run cover\",\n    \"commit-msg\": \"commitlint --edit\",\n    \"cover\": \"NODE_ENV=cover c8 --all --src src --reporter lcov --reporter text-summary --reporter text npm test\",\n    \"debug\": \"NODE_ENV=debug npm run test -- -st --fail-fast\",\n    \"dev\": \"npm run lint-config-and-fix && npm run lint-and-fix && npm run cover -- -- -st --fail-fast\",\n    \"install-hooks\": \"husky install\",\n    \"lint\": \"xo\",\n    \"lint-and-fix\": \"npm run lint -- --fix\",\n    \"lint-config\": \"fixpack --dryRun\",\n    \"lint-config-and-fix\": \"fixpack || fixpack\",\n    \"postinstall\": \"npm run install-hooks\",\n    \"postpublish\": \"pinst --enable\",\n    \"precommit\": \"lint-staged\",\n    \"prepare\": \"npm run build\",\n    \"prepublishOnly\": \"pinst --disable\",\n    \"release\": \"np --message ':hatching_chick: release: Bumping to v%s.'\",\n    \"test\": \"ava\"\n  },\n  \"dependencies\": {},\n  \"devDependencies\": {\n    \"@babel/core\": \"7.14.0\",\n    \"@babel/preset-env\": \"7.14.1\",\n    \"@babel/register\": \"7.13.16\",\n    \"@commitlint/cli\": \"12.1.1\",\n    \"@iterable-iterator/iter\": \"^0.0.2\",\n    \"@iterable-iterator/repeat\": \"^0.0.1\",\n    \"@js-library/commitlint-config\": \"0.0.4\",\n    \"ava\": \"3.15.0\",\n    \"babel-plugin-transform-remove-console\": \"6.9.4\",\n    \"babel-plugin-unassert\": \"3.0.1\",\n    \"babel-preset-power-assert\": \"3.0.0\",\n    \"c8\": \"7.7.2\",\n    \"coveralls\": \"3.1.0\",\n    \"esdoc\": \"1.1.0\",\n    \"esdoc-inject-script-plugin\": \"1.0.0\",\n    \"esdoc-inject-style-plugin\": \"1.0.0\",\n    \"esdoc-standard-plugin\": \"1.0.0\",\n    \"fixpack\": \"4.0.0\",\n    \"husky\": \"6.0.0\",\n    \"lint-staged\": \"10.5.4\",\n    \"microbundle\": \"0.13.0\",\n    \"np\": \"7.5.0\",\n    \"pinst\": \"2.1.6\",\n    \"power-assert\": \"1.6.1\",\n    \"regenerator-runtime\": \"0.13.7\",\n    \"xo\": \"0.39.1\"\n  },\n  \"ava\": {\n    \"files\": [\n      \"test/src/**/*\"\n    ],\n    \"require\": [\n      \"regenerator-runtime/runtime\",\n      \"@babel/register\"\n    ],\n    \"timeout\": \"1m\",\n    \"concurrency\": 8\n  },\n  \"babel\": {\n    \"sourceMaps\": true,\n    \"presets\": [\n      [\n        \"@babel/preset-env\",\n        {\n          \"targets\": \"current node\"\n        }\n      ]\n    ],\n    \"plugins\": [\n      [\n        \"transform-remove-console\",\n        {\n          \"exclude\": [\n            \"log\",\n            \"error\",\n            \"warn\"\n          ]\n        }\n      ]\n    ],\n    \"env\": {\n      \"debug\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ],\n        \"plugins\": [\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"debug\",\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ]\n      },\n      \"test\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"cover\": {\n        \"sourceMaps\": \"both\",\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"development\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": [\n                \"defaults\",\n                \"maintained node versions\"\n              ]\n            }\n          ],\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"production\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": [\n                \"defaults\",\n                \"maintained node versions\"\n              ]\n            }\n          ]\n        ],\n        \"plugins\": [\n          \"babel-plugin-unassert\"\n        ]\n      }\n    }\n  },\n  \"lint-staged\": {\n    \"*.js\": [\n      \"npm run lint-and-fix\"\n    ],\n    \"package.json\": [\n      \"npm run lint-config-and-fix\"\n    ]\n  },\n  \"prettier\": {\n    \"trailingComma\": \"all\"\n  },\n  \"xo\": {\n    \"prettier\": true,\n    \"plugins\": [\n      \"unicorn\"\n    ],\n    \"rules\": {\n      \"unicorn/filename-case\": \"off\"\n    },\n    \"overrides\": [\n      {\n        \"files\": [\n          \"doc/**\"\n        ],\n        \"env\": \"browser\"\n      }\n    ]\n  }\n}\n",
     "longname": "/home/runner/work/cardinality/cardinality/package.json",
     "name": "package.json",
     "static": true,

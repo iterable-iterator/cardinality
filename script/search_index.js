@@ -1,26 +1,26 @@
 window.esdocSearchIndex = [
   [
-    "@iterable-iterator/cardinality/src/sugar.js~atleast",
+    "@iterable-iterator/cardinality/src/api/atleast.js~atleast",
     "variable/index.html#static-variable-atLeast",
-    "<span>atLeast</span> <span class=\"search-result-import-path\">@iterable-iterator/cardinality/src/sugar.js</span>",
+    "<span>atLeast</span> <span class=\"search-result-import-path\">@iterable-iterator/cardinality/src/api/atLeast.js</span>",
     "variable"
   ],
   [
-    "@iterable-iterator/cardinality/src/sugar.js~atmost",
+    "@iterable-iterator/cardinality/src/api/atmost.js~atmost",
     "variable/index.html#static-variable-atMost",
-    "<span>atMost</span> <span class=\"search-result-import-path\">@iterable-iterator/cardinality/src/sugar.js</span>",
+    "<span>atMost</span> <span class=\"search-result-import-path\">@iterable-iterator/cardinality/src/api/atMost.js</span>",
     "variable"
   ],
   [
-    "@iterable-iterator/cardinality/src/sugar.js~between",
+    "@iterable-iterator/cardinality/src/api/between.js~between",
     "variable/index.html#static-variable-between",
-    "<span>between</span> <span class=\"search-result-import-path\">@iterable-iterator/cardinality/src/sugar.js</span>",
+    "<span>between</span> <span class=\"search-result-import-path\">@iterable-iterator/cardinality/src/api/between.js</span>",
     "variable"
   ],
   [
-    "@iterable-iterator/cardinality/src/sugar.js~count",
+    "@iterable-iterator/cardinality/src/api/count.js~count",
     "variable/index.html#static-variable-count",
-    "<span>count</span> <span class=\"search-result-import-path\">@iterable-iterator/cardinality/src/sugar.js</span>",
+    "<span>count</span> <span class=\"search-result-import-path\">@iterable-iterator/cardinality/src/api/count.js</span>",
     "variable"
   ],
   [
@@ -66,9 +66,9 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
-    "@iterable-iterator/cardinality/src/sugar.js~isempty",
+    "@iterable-iterator/cardinality/src/api/isempty.js~isempty",
     "function/index.html#static-function-isEmpty",
-    "<span>isEmpty</span> <span class=\"search-result-import-path\">@iterable-iterator/cardinality/src/sugar.js</span>",
+    "<span>isEmpty</span> <span class=\"search-result-import-path\">@iterable-iterator/cardinality/src/api/isEmpty.js</span>",
     "function"
   ],
   [
@@ -378,6 +378,36 @@ window.esdocSearchIndex = [
     "external"
   ],
   [
+    "src/api/atleast.js",
+    "file/src/api/atLeast.js.html",
+    "src/api/atLeast.js",
+    "file"
+  ],
+  [
+    "src/api/atmost.js",
+    "file/src/api/atMost.js.html",
+    "src/api/atMost.js",
+    "file"
+  ],
+  [
+    "src/api/between.js",
+    "file/src/api/between.js.html",
+    "src/api/between.js",
+    "file"
+  ],
+  [
+    "src/api/count.js",
+    "file/src/api/count.js.html",
+    "src/api/count.js",
+    "file"
+  ],
+  [
+    "src/api/isempty.js",
+    "file/src/api/isEmpty.js.html",
+    "src/api/isEmpty.js",
+    "file"
+  ],
+  [
     "src/core/eq.js",
     "file/src/core/eq.js.html",
     "src/core/eq.js",
@@ -420,12 +450,6 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/core/index.js",
-    "file/src/core/index.js.html",
-    "src/core/index.js",
-    "file"
-  ],
-  [
     "src/core/le.js",
     "file/src/core/le.js.html",
     "src/core/le.js",
@@ -453,12 +477,6 @@ window.esdocSearchIndex = [
     "src/index.js",
     "file/src/index.js.html",
     "src/index.js",
-    "file"
-  ],
-  [
-    "src/sugar.js",
-    "file/src/sugar.js.html",
-    "src/sugar.js",
     "file"
   ]
 ]
