@@ -3,7 +3,7 @@
  *
  * @param {Iterable} iterable
  */
-const length = (iterable) => {
+const len = (iterable) => {
 	if (iterable.length !== undefined) return iterable.length;
 
 	if (iterable.size !== undefined) return iterable.size;
@@ -17,4 +17,4 @@ const length = (iterable) => {
 	return n;
 };
 
-export default length;
+export default len;
