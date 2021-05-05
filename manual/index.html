@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../">
-  <title data-ice="title">Manual | @aureooms/js-cardinality</title>
+  <title data-ice="title">Manual | @iterable-iterator/cardinality</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
   <script src="script/manual.js"></script>
-<link rel="stylesheet" href="./inject/css/0-style.css"><script src="./inject/script/0-header.js"></script><meta name="description" content="Iterable cardinality library for JavaScript"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@aureooms/js-cardinality"><meta property="twitter:description" content="Iterable cardinality library for JavaScript"></head>
+<link rel="stylesheet" href="./inject/css/0-style.css"><script src="./inject/script/0-header.js"></script><meta name="description" content="Iterable cardinality library for JavaScript"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@iterable-iterator/cardinality"><meta property="twitter:description" content="Iterable cardinality library for JavaScript"></head>
 <body class="layout-container manual-root manual-index" data-ice="rootContainer">
 
 <header>
@@ -24,7 +24,7 @@
   </span>
     <ul class="search-result"></ul>
   </div>
-<a style="position:relative; top:3px;" href="https://github.com/aureooms/js-cardinality"><img width="20px" src="./image/github.png"></a></header>
+<a style="position:relative; top:3px;" href="https://github.com/iterable-iterator/cardinality"><img width="20px" src="./image/github.png"></a></header>
 
 <nav class="navigation" data-ice="nav"><div class="manual-toc-root">
   
@@ -74,8 +74,8 @@
       <div class="manual-card">
         <div data-ice="card"><h1>Installation</h1><p>Can be managed using
 <a href="http://jspm.io">jspm</a>
-or <a href="https://github.com/npm/npm">npm</a>.</p><h3>jspm</h3><pre><code class="lang-terminal"><code class="source-code prettyprint">jspm install npm:@aureooms/js-cardinality</code>
-</code></pre><h3>npm</h3><pre><code class="lang-terminal"><code class="source-code prettyprint">npm install @aureooms/js-cardinality --save</code>
+or <a href="https://github.com/npm/npm">npm</a>.</p><h3>jspm</h3><pre><code class="lang-terminal"><code class="source-code prettyprint">jspm install npm:@iterable-iterator/cardinality</code>
+</code></pre><h3>npm</h3><pre><code class="lang-terminal"><code class="source-code prettyprint">npm install @iterable-iterator/cardinality --save</code>
 </code></pre></div>
         <a data-ice="link" href="manual/installation.html"></a>
       </div>
@@ -86,16 +86,16 @@ or <a href="https://github.com/npm/npm">npm</a>.</p><h3>jspm</h3><pre><code clas
 <a href="https://babeljs.io/docs/usage/polyfill">regenerator-runtime/runtime</a>.</p><pre><code class="lang-js"><code class="source-code prettyprint">require( &apos;regenerator-runtime/runtime&apos; ) ;
 // or
 import &apos;regenerator-runtime/runtime.js&apos; ;</code>
-</code></pre><p>Then</p><pre><code class="lang-js"><code class="source-code prettyprint">const cardinality = require( &apos;@aureooms/js-cardinality&apos; ) ;
+</code></pre><p>Then</p><pre><code class="lang-js"><code class="source-code prettyprint">const cardinality = require( &apos;@iterable-iterator/cardinality&apos; ) ;
 // or
-import cardinality from &apos;@aureooms/js-cardinality&apos; ;</code>
+import cardinality from &apos;@iterable-iterator/cardinality&apos; ;</code>
 </code></pre></div>
         <a data-ice="link" href="manual/usage.html"></a>
       </div>
     </div>
 <div class="manual-card-wrap" data-ice="cards">
       <div class="manual-card">
-        <div data-ice="card"><h1>Examples</h1><pre><code class="lang-js"><code class="source-code prettyprint">let { count , atLeast , atMost , between , isEmpty } = cardinality ;
+        <div data-ice="card"><h1>Examples</h1><pre><code class="lang-js"><code class="source-code prettyprint">import { count , atLeast , atMost , between , isEmpty } from &apos;@iterable-iterator/cardinality&apos;;
 
 isEmpty( &quot;&quot; ) ; // true
 
@@ -103,7 +103,9 @@ isEmpty( &quot;abc&quot; ) ; // false
 
 count( &quot;abc&quot; ) ; // 3
 
-let { iter , range , repeat } = require( &quot;@aureooms/js-itertools&quot; ) ;
+import {iter} from &apos;@iterable-iterator/iter&apos;;
+import {range} from &apos;@iterable-iterator/range&apos;;
+import {repeat} from &apos;@iterable-iterator/repeat&apos;;
 
 count( iter( &quot;abc&quot; ) ) ; // 3
 
@@ -120,20 +122,22 @@ between( 0 , 10000 , range( 2839 ) ) ; // true
 atLeast( 10 , repeat( &quot;A&quot; ) ) ; // true
 
 // other available functions
-cardinality.len( iterable ) ; // count( iterable )
+import {len, le, lt, ge, gt, gele, gelt, gtle, gtlt, eq, ne} from &apos;@iterable-iterator/cardinality&apos;;
 
-cardinality.le( n , iterable ) ; // len( iterable ) &lt;= n
-cardinality.lt( n , iterable ) ; // len( iterable )  &lt; n
-cardinality.ge( n , iterable ) ; // len( iterable ) &gt;= n
-cardinality.gt( n , iterable ) ; // len( iterable )  &gt; n
+len( iterable ) ; // count( iterable )
 
-cardinality.gele( m , n , iterable ) ; // m &lt;= len( iterable ) &lt;= n
-cardinality.gelt( m , n , iterable ) ; // m &lt;= len( iterable )  &lt; n
-cardinality.gtle( m , n , iterable ) ; // m  &lt; len( iterable ) &lt;= n
-cardinality.gtlt( m , n , iterable ) ; // m  &lt; len( iterable )  &lt; n
+le( n , iterable ) ; // len( iterable ) &lt;= n
+lt( n , iterable ) ; // len( iterable )  &lt; n
+ge( n , iterable ) ; // len( iterable ) &gt;= n
+gt( n , iterable ) ; // len( iterable )  &gt; n
 
-cardinality.eq( n , iterable ) ; // len( iterable ) === n
-cardinality.ne( n , iterable ) ; // len( iterable ) !== n</code>
+gele( m , n , iterable ) ; // m &lt;= len( iterable ) &lt;= n
+gelt( m , n , iterable ) ; // m &lt;= len( iterable )  &lt; n
+gtle( m , n , iterable ) ; // m  &lt; len( iterable ) &lt;= n
+gtlt( m , n , iterable ) ; // m  &lt; len( iterable )  &lt; n
+
+eq( n , iterable ) ; // len( iterable ) === n
+ne( n , iterable ) ; // len( iterable ) !== n</code>
 </code></pre></div>
         <a data-ice="link" href="manual/example.html"></a>
       </div>

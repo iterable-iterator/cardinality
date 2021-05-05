@@ -1,98 +1,98 @@
 window.esdocSearchIndex = [
   [
-    "@aureooms/js-cardinality/src/sugar.js~atleast",
+    "@iterable-iterator/cardinality/src/sugar.js~atleast",
     "variable/index.html#static-variable-atLeast",
-    "<span>atLeast</span> <span class=\"search-result-import-path\">@aureooms/js-cardinality/src/sugar.js</span>",
+    "<span>atLeast</span> <span class=\"search-result-import-path\">@iterable-iterator/cardinality/src/sugar.js</span>",
     "variable"
   ],
   [
-    "@aureooms/js-cardinality/src/sugar.js~atmost",
+    "@iterable-iterator/cardinality/src/sugar.js~atmost",
     "variable/index.html#static-variable-atMost",
-    "<span>atMost</span> <span class=\"search-result-import-path\">@aureooms/js-cardinality/src/sugar.js</span>",
+    "<span>atMost</span> <span class=\"search-result-import-path\">@iterable-iterator/cardinality/src/sugar.js</span>",
     "variable"
   ],
   [
-    "@aureooms/js-cardinality/src/sugar.js~between",
+    "@iterable-iterator/cardinality/src/sugar.js~between",
     "variable/index.html#static-variable-between",
-    "<span>between</span> <span class=\"search-result-import-path\">@aureooms/js-cardinality/src/sugar.js</span>",
+    "<span>between</span> <span class=\"search-result-import-path\">@iterable-iterator/cardinality/src/sugar.js</span>",
     "variable"
   ],
   [
-    "@aureooms/js-cardinality/src/sugar.js~count",
+    "@iterable-iterator/cardinality/src/sugar.js~count",
     "variable/index.html#static-variable-count",
-    "<span>count</span> <span class=\"search-result-import-path\">@aureooms/js-cardinality/src/sugar.js</span>",
+    "<span>count</span> <span class=\"search-result-import-path\">@iterable-iterator/cardinality/src/sugar.js</span>",
     "variable"
   ],
   [
-    "@aureooms/js-cardinality/src/core/eq.js~eq",
+    "@iterable-iterator/cardinality/src/core/eq.js~eq",
     "function/index.html#static-function-eq",
-    "<span>eq</span> <span class=\"search-result-import-path\">@aureooms/js-cardinality/src/core/eq.js</span>",
+    "<span>eq</span> <span class=\"search-result-import-path\">@iterable-iterator/cardinality/src/core/eq.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-cardinality/src/core/ge.js~ge",
+    "@iterable-iterator/cardinality/src/core/ge.js~ge",
     "function/index.html#static-function-ge",
-    "<span>ge</span> <span class=\"search-result-import-path\">@aureooms/js-cardinality/src/core/ge.js</span>",
+    "<span>ge</span> <span class=\"search-result-import-path\">@iterable-iterator/cardinality/src/core/ge.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-cardinality/src/core/gele.js~gele",
+    "@iterable-iterator/cardinality/src/core/gele.js~gele",
     "function/index.html#static-function-gele",
-    "<span>gele</span> <span class=\"search-result-import-path\">@aureooms/js-cardinality/src/core/gele.js</span>",
+    "<span>gele</span> <span class=\"search-result-import-path\">@iterable-iterator/cardinality/src/core/gele.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-cardinality/src/core/gelt.js~gelt",
+    "@iterable-iterator/cardinality/src/core/gelt.js~gelt",
     "function/index.html#static-function-gelt",
-    "<span>gelt</span> <span class=\"search-result-import-path\">@aureooms/js-cardinality/src/core/gelt.js</span>",
+    "<span>gelt</span> <span class=\"search-result-import-path\">@iterable-iterator/cardinality/src/core/gelt.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-cardinality/src/core/gt.js~gt",
+    "@iterable-iterator/cardinality/src/core/gt.js~gt",
     "function/index.html#static-function-gt",
-    "<span>gt</span> <span class=\"search-result-import-path\">@aureooms/js-cardinality/src/core/gt.js</span>",
+    "<span>gt</span> <span class=\"search-result-import-path\">@iterable-iterator/cardinality/src/core/gt.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-cardinality/src/core/gtle.js~gtle",
+    "@iterable-iterator/cardinality/src/core/gtle.js~gtle",
     "function/index.html#static-function-gtle",
-    "<span>gtle</span> <span class=\"search-result-import-path\">@aureooms/js-cardinality/src/core/gtle.js</span>",
+    "<span>gtle</span> <span class=\"search-result-import-path\">@iterable-iterator/cardinality/src/core/gtle.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-cardinality/src/core/gtlt.js~gtlt",
+    "@iterable-iterator/cardinality/src/core/gtlt.js~gtlt",
     "function/index.html#static-function-gtlt",
-    "<span>gtlt</span> <span class=\"search-result-import-path\">@aureooms/js-cardinality/src/core/gtlt.js</span>",
+    "<span>gtlt</span> <span class=\"search-result-import-path\">@iterable-iterator/cardinality/src/core/gtlt.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-cardinality/src/sugar.js~isempty",
+    "@iterable-iterator/cardinality/src/sugar.js~isempty",
     "function/index.html#static-function-isEmpty",
-    "<span>isEmpty</span> <span class=\"search-result-import-path\">@aureooms/js-cardinality/src/sugar.js</span>",
+    "<span>isEmpty</span> <span class=\"search-result-import-path\">@iterable-iterator/cardinality/src/sugar.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-cardinality/src/core/le.js~le",
+    "@iterable-iterator/cardinality/src/core/le.js~le",
     "function/index.html#static-function-le",
-    "<span>le</span> <span class=\"search-result-import-path\">@aureooms/js-cardinality/src/core/le.js</span>",
+    "<span>le</span> <span class=\"search-result-import-path\">@iterable-iterator/cardinality/src/core/le.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-cardinality/src/core/len.js~length",
+    "@iterable-iterator/cardinality/src/core/len.js~length",
     "function/index.html#static-function-length",
-    "<span>length</span> <span class=\"search-result-import-path\">@aureooms/js-cardinality/src/core/len.js</span>",
+    "<span>length</span> <span class=\"search-result-import-path\">@iterable-iterator/cardinality/src/core/len.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-cardinality/src/core/lt.js~lt",
+    "@iterable-iterator/cardinality/src/core/lt.js~lt",
     "function/index.html#static-function-lt",
-    "<span>lt</span> <span class=\"search-result-import-path\">@aureooms/js-cardinality/src/core/lt.js</span>",
+    "<span>lt</span> <span class=\"search-result-import-path\">@iterable-iterator/cardinality/src/core/lt.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-cardinality/src/core/ne.js~ne",
+    "@iterable-iterator/cardinality/src/core/ne.js~ne",
     "function/index.html#static-function-ne",
-    "<span>ne</span> <span class=\"search-result-import-path\">@aureooms/js-cardinality/src/core/ne.js</span>",
+    "<span>ne</span> <span class=\"search-result-import-path\">@iterable-iterator/cardinality/src/core/ne.js</span>",
     "function"
   ],
   [
