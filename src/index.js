@@ -1,2 +1,16 @@
-export * from './core/index.js';
-export * from './sugar.js';
+export {default as atLeast} from './api/atLeast.js';
+export {default as atMost} from './api/atMost.js';
+export {default as between} from './api/between.js';
+export {default as count} from './api/count.js';
+export {default as isEmpty} from './api/isEmpty.js';
+export {default as eq} from './core/eq.js';
+export {default as ge} from './core/ge.js';
+export {default as gele} from './core/gele.js';
+export {default as gelt} from './core/gelt.js';
+export {default as gt} from './core/gt.js';
+export {default as gtle} from './core/gtle.js';
+export {default as gtlt} from './core/gtlt.js';
+export {default as le} from './core/le.js';
+export {default as len} from './core/len.js';
+export {default as lt} from './core/lt.js';
+export {default as ne} from './core/ne.js';

@@ -4,7 +4,7 @@
  * @param {number} n
  * @param {Iterable} iterable
  */
-export default function eq(n, iterable) {
+const eq = (n, iterable) => {
 	if (n < 0 || !Number.isInteger(n)) return false;
 
 	if (iterable.length !== undefined) return iterable.length === n;
@@ -16,4 +16,6 @@ export default function eq(n, iterable) {
 	for (; n > 0; --n) if (it.next().done) return false;
 
 	return it.next().done;
-}
+};
+
+export default eq;

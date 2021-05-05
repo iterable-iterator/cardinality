@@ -6,6 +6,5 @@ import gt from './gt.js';
  * @param {number} n
  * @param {Iterable} iterable
  */
-export default function ge(n, iterable) {
-	return gt(n - 1, iterable);
-}
+const ge = (n, iterable) => gt(n - 1, iterable);
+export default ge;

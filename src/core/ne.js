@@ -6,6 +6,5 @@ import eq from './eq.js';
  * @param {number} n
  * @param {Iterable} iterable
  */
-export default function ne(n, iterable) {
-	return !eq(n, iterable);
-}
+const ne = (n, iterable) => !eq(n, iterable);
+export default ne;

@@ -4,7 +4,7 @@
  * @param {number} n
  * @param {Iterable} iterable
  */
-export default function le(n, iterable) {
+const le = (n, iterable) => {
 	if (n < 0) return false;
 
 	if (iterable.length !== undefined) return iterable.length <= n;
@@ -16,4 +16,6 @@ export default function le(n, iterable) {
 	for (; n > 0; --n) if (it.next().done) return true;
 
 	return it.next().done;
-}
+};
+
+export default le;

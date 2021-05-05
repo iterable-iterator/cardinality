@@ -7,6 +7,5 @@ import gele from './gele.js';
  * @param {number} n
  * @param {Iterable} iterable
  */
-export default function gtlt(m, n, iterable) {
-	return gele(m + 1, n - 1, iterable);
-}
+const gtlt = (m, n, iterable) => gele(m + 1, n - 1, iterable);
+export default gtlt;

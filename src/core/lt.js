@@ -6,6 +6,5 @@ import le from './le.js';
  * @param {number} n
  * @param {Iterable} iterable
  */
-export default function lt(n, iterable) {
-	return le(n - 1, iterable);
-}
+const lt = (n, iterable) => le(n - 1, iterable);
+export default lt;

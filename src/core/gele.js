@@ -8,7 +8,7 @@ import ge from './ge.js';
  * @param {number} n
  * @param {Iterable} iterable
  */
-export default function gele(m, n, iterable) {
+const gele = (m, n, iterable) => {
 	if (n < m) return false;
 
 	if (n < 0) return false;
@@ -31,4 +31,6 @@ export default function gele(m, n, iterable) {
 	for (; n > 0; --n) if (it.next().done) return true;
 
 	return it.next().done;
-}
+};
+
+export default gele;
