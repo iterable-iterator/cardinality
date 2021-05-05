@@ -1,6 +1,6 @@
 import test from 'ava';
 
-import {iter} from '@aureooms/js-itertools';
+import {iter} from '@iterable-iterator/iter';
 
 import {count} from '../../../src/index.js';
 

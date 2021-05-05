@@ -1,6 +1,6 @@
 # Examples
 ```js
-let { count , atLeast , atMost , between , isEmpty } = cardinality ;
+import { count , atLeast , atMost , between , isEmpty } from '@iterable-iterator/cardinality';
 
 isEmpty( "" ) ; // true
 
@@ -8,7 +8,9 @@ isEmpty( "abc" ) ; // false
 
 count( "abc" ) ; // 3
 
-let { iter , range , repeat } = require( "@aureooms/js-itertools" ) ;
+import {iter} from '@iterable-iterator/iter';
+import {range} from '@iterable-iterator/range';
+import {repeat} from '@iterable-iterator/repeat';
 
 count( iter( "abc" ) ) ; // 3
 
@@ -25,18 +27,20 @@ between( 0 , 10000 , range( 2839 ) ) ; // true
 atLeast( 10 , repeat( "A" ) ) ; // true
 
 // other available functions
-cardinality.len( iterable ) ; // count( iterable )
+import {len, le, lt, ge, gt, gele, gelt, gtle, gtlt, eq, ne} from '@iterable-iterator/cardinality';
 
-cardinality.le( n , iterable ) ; // len( iterable ) <= n
-cardinality.lt( n , iterable ) ; // len( iterable )  < n
-cardinality.ge( n , iterable ) ; // len( iterable ) >= n
-cardinality.gt( n , iterable ) ; // len( iterable )  > n
+len( iterable ) ; // count( iterable )
 
-cardinality.gele( m , n , iterable ) ; // m <= len( iterable ) <= n
-cardinality.gelt( m , n , iterable ) ; // m <= len( iterable )  < n
-cardinality.gtle( m , n , iterable ) ; // m  < len( iterable ) <= n
-cardinality.gtlt( m , n , iterable ) ; // m  < len( iterable )  < n
+le( n , iterable ) ; // len( iterable ) <= n
+lt( n , iterable ) ; // len( iterable )  < n
+ge( n , iterable ) ; // len( iterable ) >= n
+gt( n , iterable ) ; // len( iterable )  > n
 
-cardinality.eq( n , iterable ) ; // len( iterable ) === n
-cardinality.ne( n , iterable ) ; // len( iterable ) !== n
+gele( m , n , iterable ) ; // m <= len( iterable ) <= n
+gelt( m , n , iterable ) ; // m <= len( iterable )  < n
+gtle( m , n , iterable ) ; // m  < len( iterable ) <= n
+gtlt( m , n , iterable ) ; // m  < len( iterable )  < n
+
+eq( n , iterable ) ; // len( iterable ) === n
+ne( n , iterable ) ; // len( iterable ) !== n
 ```

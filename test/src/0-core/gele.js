@@ -1,6 +1,7 @@
 import test from 'ava';
 
-import {iter, repeat} from '@aureooms/js-itertools';
+import {iter} from '@iterable-iterator/iter';
+import {repeat} from '@iterable-iterator/repeat';
 
 import {gele} from '../../../src/index.js';
 

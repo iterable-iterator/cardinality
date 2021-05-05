@@ -9,7 +9,7 @@ import 'regenerator-runtime/runtime.js' ;
 
 Then
 ```js
-const cardinality = require( '@aureooms/js-cardinality' ) ;
+const cardinality = require( '@iterable-iterator/cardinality' ) ;
 // or
-import cardinality from '@aureooms/js-cardinality' ;
+import cardinality from '@iterable-iterator/cardinality' ;
 ```
