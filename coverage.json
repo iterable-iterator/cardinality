@@ -1,35 +1,27 @@
 {
-  "coverage": "75%",
+  "coverage": "100%",
   "expectCount": 16,
-  "actualCount": 12,
+  "actualCount": 16,
   "files": {
     "src/api/atLeast.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        2
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/api/atMost.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        2
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/api/between.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        2
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/api/count.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        2
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/api/isEmpty.js": {
       "expectCount": 1,

@@ -78,9 +78,9 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
-    "@iterable-iterator/cardinality/src/core/len.js~length",
-    "function/index.html#static-function-length",
-    "<span>length</span> <span class=\"search-result-import-path\">@iterable-iterator/cardinality/src/core/len.js</span>",
+    "@iterable-iterator/cardinality/src/core/len.js~len",
+    "function/index.html#static-function-len",
+    "<span>len</span> <span class=\"search-result-import-path\">@iterable-iterator/cardinality/src/core/len.js</span>",
     "function"
   ],
   [

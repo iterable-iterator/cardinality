@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 82,
+  "end": 115,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 4,
+      "line": 7,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 82,
+    "end": 115,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 4,
+        "line": 7,
         "column": 0
       }
     },
@@ -95,103 +95,123 @@
             "raw": "'../core/gele.js'"
           },
           "value": "../core/gele.js"
-        }
+        },
+        "trailingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * Same as {@link gele}.\n ",
+            "start": 36,
+            "end": 68,
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 0
+              },
+              "end": {
+                "line": 4,
+                "column": 3
+              }
+            }
+          }
+        ]
       },
       {
         "type": "Identifier",
-        "start": 36,
-        "end": 57,
+        "start": 69,
+        "end": 90,
         "loc": {
           "start": {
-            "line": 2,
+            "line": 5,
             "column": 0
           },
           "end": {
-            "line": 2,
+            "line": 5,
             "column": 21
           }
         },
         "declarations": [
           {
             "type": "VariableDeclarator",
-            "start": 42,
-            "end": 56,
+            "start": 75,
+            "end": 89,
             "loc": {
               "start": {
-                "line": 2,
+                "line": 5,
                 "column": 6
               },
               "end": {
-                "line": 2,
+                "line": 5,
                 "column": 20
               }
             },
             "id": {
               "type": "Identifier",
-              "start": 42,
-              "end": 49,
+              "start": 75,
+              "end": 82,
               "loc": {
                 "start": {
-                  "line": 2,
+                  "line": 5,
                   "column": 6
                 },
                 "end": {
-                  "line": 2,
+                  "line": 5,
                   "column": 13
                 },
                 "identifierName": "between"
               },
-              "name": "between"
+              "name": "between",
+              "leadingComments": null
             },
             "init": {
               "type": "Identifier",
-              "start": 52,
-              "end": 56,
+              "start": 85,
+              "end": 89,
               "loc": {
                 "start": {
-                  "line": 2,
+                  "line": 5,
                   "column": 16
                 },
                 "end": {
-                  "line": 2,
+                  "line": 5,
                   "column": 20
                 },
                 "identifierName": "gele"
               },
               "name": "gele"
-            }
+            },
+            "leadingComments": null
           }
         ],
         "kind": "const",
-        "name": "_",
         "leadingComments": [],
+        "name": "_",
         "trailingComments": []
       },
       {
         "type": "Identifier",
-        "start": 58,
-        "end": 81,
+        "start": 91,
+        "end": 114,
         "loc": {
           "start": {
-            "line": 3,
+            "line": 6,
             "column": 0
           },
           "end": {
-            "line": 3,
+            "line": 6,
             "column": 23
           }
         },
         "declaration": {
           "type": "Identifier",
-          "start": 73,
-          "end": 80,
+          "start": 106,
+          "end": 113,
           "loc": {
             "start": {
-              "line": 3,
+              "line": 6,
               "column": 15
             },
             "end": {
-              "line": 3,
+              "line": 6,
               "column": 22
             },
             "identifierName": "between"
@@ -204,92 +224,128 @@
       },
       {
         "type": "ExportDefaultDeclaration",
-        "start": 58,
-        "end": 81,
+        "start": 91,
+        "end": 114,
         "loc": {
           "start": {
-            "line": 3,
+            "line": 6,
             "column": 0
           },
           "end": {
-            "line": 3,
+            "line": 6,
             "column": 23
           }
         },
         "declaration": {
           "type": "VariableDeclaration",
-          "start": 36,
-          "end": 57,
+          "start": 69,
+          "end": 90,
           "loc": {
             "start": {
-              "line": 2,
+              "line": 5,
               "column": 0
             },
             "end": {
-              "line": 2,
+              "line": 5,
               "column": 21
             }
           },
           "declarations": [
             {
               "type": "VariableDeclarator",
-              "start": 42,
-              "end": 56,
+              "start": 75,
+              "end": 89,
               "loc": {
                 "start": {
-                  "line": 2,
+                  "line": 5,
                   "column": 6
                 },
                 "end": {
-                  "line": 2,
+                  "line": 5,
                   "column": 20
                 }
               },
               "id": {
                 "type": "Identifier",
-                "start": 42,
-                "end": 49,
+                "start": 75,
+                "end": 82,
                 "loc": {
                   "start": {
-                    "line": 2,
+                    "line": 5,
                     "column": 6
                   },
                   "end": {
-                    "line": 2,
+                    "line": 5,
                     "column": 13
                   },
                   "identifierName": "between"
                 },
-                "name": "between"
+                "name": "between",
+                "leadingComments": null
               },
               "init": {
                 "type": "Identifier",
-                "start": 52,
-                "end": 56,
+                "start": 85,
+                "end": 89,
                 "loc": {
                   "start": {
-                    "line": 2,
+                    "line": 5,
                     "column": 16
                   },
                   "end": {
-                    "line": 2,
+                    "line": 5,
                     "column": 20
                   },
                   "identifierName": "gele"
                 },
                 "name": "gele"
-              }
+              },
+              "leadingComments": null
             }
           ],
           "kind": "const",
-          "leadingComments": [],
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * Same as {@link gele}.\n ",
+              "start": 36,
+              "end": 68,
+              "loc": {
+                "start": {
+                  "line": 2,
+                  "column": 0
+                },
+                "end": {
+                  "line": 4,
+                  "column": 3
+                }
+              }
+            }
+          ],
           "trailingComments": []
         }
       }
     ],
     "directives": []
   },
-  "comments": [],
+  "comments": [
+    {
+      "type": "CommentBlock",
+      "value": "*\n * Same as {@link gele}.\n ",
+      "start": 36,
+      "end": 68,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 4,
+          "column": 3
+        }
+      }
+    }
+  ],
   "tokens": [
     {
       "type": {
@@ -425,6 +481,22 @@
       }
     },
     {
+      "type": "CommentBlock",
+      "value": "*\n * Same as {@link gele}.\n ",
+      "start": 36,
+      "end": 68,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 4,
+          "column": 3
+        }
+      }
+    },
+    {
       "type": {
         "label": "const",
         "keyword": "const",
@@ -439,15 +511,15 @@
         "updateContext": null
       },
       "value": "const",
-      "start": 36,
-      "end": 41,
+      "start": 69,
+      "end": 74,
       "loc": {
         "start": {
-          "line": 2,
+          "line": 5,
           "column": 0
         },
         "end": {
-          "line": 2,
+          "line": 5,
           "column": 5
         }
       }
@@ -465,15 +537,15 @@
         "binop": null
       },
       "value": "between",
-      "start": 42,
-      "end": 49,
+      "start": 75,
+      "end": 82,
       "loc": {
         "start": {
-          "line": 2,
+          "line": 5,
           "column": 6
         },
         "end": {
-          "line": 2,
+          "line": 5,
           "column": 13
         }
       }
@@ -492,15 +564,15 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 50,
-      "end": 51,
+      "start": 83,
+      "end": 84,
       "loc": {
         "start": {
-          "line": 2,
+          "line": 5,
           "column": 14
         },
         "end": {
-          "line": 2,
+          "line": 5,
           "column": 15
         }
       }
@@ -518,15 +590,15 @@
         "binop": null
       },
       "value": "gele",
-      "start": 52,
-      "end": 56,
+      "start": 85,
+      "end": 89,
       "loc": {
         "start": {
-          "line": 2,
+          "line": 5,
           "column": 16
         },
         "end": {
-          "line": 2,
+          "line": 5,
           "column": 20
         }
       }
@@ -544,15 +616,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 56,
-      "end": 57,
+      "start": 89,
+      "end": 90,
       "loc": {
         "start": {
-          "line": 2,
+          "line": 5,
           "column": 20
         },
         "end": {
-          "line": 2,
+          "line": 5,
           "column": 21
         }
       }
@@ -572,15 +644,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 58,
-      "end": 64,
+      "start": 91,
+      "end": 97,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 6,
           "column": 0
         },
         "end": {
-          "line": 3,
+          "line": 6,
           "column": 6
         }
       }
@@ -600,15 +672,15 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 65,
-      "end": 72,
+      "start": 98,
+      "end": 105,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 6,
           "column": 7
         },
         "end": {
-          "line": 3,
+          "line": 6,
           "column": 14
         }
       }
@@ -626,15 +698,15 @@
         "binop": null
       },
       "value": "between",
-      "start": 73,
-      "end": 80,
+      "start": 106,
+      "end": 113,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 6,
           "column": 15
         },
         "end": {
-          "line": 3,
+          "line": 6,
           "column": 22
         }
       }
@@ -652,15 +724,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 80,
-      "end": 81,
+      "start": 113,
+      "end": 114,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 6,
           "column": 22
         },
         "end": {
-          "line": 3,
+          "line": 6,
           "column": 23
         }
       }
@@ -678,15 +750,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 82,
-      "end": 82,
+      "start": 115,
+      "end": 115,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 7,
           "column": 0
         },
         "end": {
-          "line": 4,
+          "line": 7,
           "column": 0
         }
       }

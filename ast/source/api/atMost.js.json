@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 74,
+  "end": 105,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 4,
+      "line": 7,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 74,
+    "end": 105,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 4,
+        "line": 7,
         "column": 0
       }
     },
@@ -95,103 +95,123 @@
             "raw": "'../core/le.js'"
           },
           "value": "../core/le.js"
-        }
+        },
+        "trailingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * Same as {@link le}.\n ",
+            "start": 32,
+            "end": 62,
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 0
+              },
+              "end": {
+                "line": 4,
+                "column": 3
+              }
+            }
+          }
+        ]
       },
       {
         "type": "Identifier",
-        "start": 32,
-        "end": 50,
+        "start": 63,
+        "end": 81,
         "loc": {
           "start": {
-            "line": 2,
+            "line": 5,
             "column": 0
           },
           "end": {
-            "line": 2,
+            "line": 5,
             "column": 18
           }
         },
         "declarations": [
           {
             "type": "VariableDeclarator",
-            "start": 38,
-            "end": 49,
+            "start": 69,
+            "end": 80,
             "loc": {
               "start": {
-                "line": 2,
+                "line": 5,
                 "column": 6
               },
               "end": {
-                "line": 2,
+                "line": 5,
                 "column": 17
               }
             },
             "id": {
               "type": "Identifier",
-              "start": 38,
-              "end": 44,
+              "start": 69,
+              "end": 75,
               "loc": {
                 "start": {
-                  "line": 2,
+                  "line": 5,
                   "column": 6
                 },
                 "end": {
-                  "line": 2,
+                  "line": 5,
                   "column": 12
                 },
                 "identifierName": "atMost"
               },
-              "name": "atMost"
+              "name": "atMost",
+              "leadingComments": null
             },
             "init": {
               "type": "Identifier",
-              "start": 47,
-              "end": 49,
+              "start": 78,
+              "end": 80,
               "loc": {
                 "start": {
-                  "line": 2,
+                  "line": 5,
                   "column": 15
                 },
                 "end": {
-                  "line": 2,
+                  "line": 5,
                   "column": 17
                 },
                 "identifierName": "le"
               },
               "name": "le"
-            }
+            },
+            "leadingComments": null
           }
         ],
         "kind": "const",
-        "name": "_",
         "leadingComments": [],
+        "name": "_",
         "trailingComments": []
       },
       {
         "type": "Identifier",
-        "start": 51,
-        "end": 73,
+        "start": 82,
+        "end": 104,
         "loc": {
           "start": {
-            "line": 3,
+            "line": 6,
             "column": 0
           },
           "end": {
-            "line": 3,
+            "line": 6,
             "column": 22
           }
         },
         "declaration": {
           "type": "Identifier",
-          "start": 66,
-          "end": 72,
+          "start": 97,
+          "end": 103,
           "loc": {
             "start": {
-              "line": 3,
+              "line": 6,
               "column": 15
             },
             "end": {
-              "line": 3,
+              "line": 6,
               "column": 21
             },
             "identifierName": "atMost"
@@ -204,92 +224,128 @@
       },
       {
         "type": "ExportDefaultDeclaration",
-        "start": 51,
-        "end": 73,
+        "start": 82,
+        "end": 104,
         "loc": {
           "start": {
-            "line": 3,
+            "line": 6,
             "column": 0
           },
           "end": {
-            "line": 3,
+            "line": 6,
             "column": 22
           }
         },
         "declaration": {
           "type": "VariableDeclaration",
-          "start": 32,
-          "end": 50,
+          "start": 63,
+          "end": 81,
           "loc": {
             "start": {
-              "line": 2,
+              "line": 5,
               "column": 0
             },
             "end": {
-              "line": 2,
+              "line": 5,
               "column": 18
             }
           },
           "declarations": [
             {
               "type": "VariableDeclarator",
-              "start": 38,
-              "end": 49,
+              "start": 69,
+              "end": 80,
               "loc": {
                 "start": {
-                  "line": 2,
+                  "line": 5,
                   "column": 6
                 },
                 "end": {
-                  "line": 2,
+                  "line": 5,
                   "column": 17
                 }
               },
               "id": {
                 "type": "Identifier",
-                "start": 38,
-                "end": 44,
+                "start": 69,
+                "end": 75,
                 "loc": {
                   "start": {
-                    "line": 2,
+                    "line": 5,
                     "column": 6
                   },
                   "end": {
-                    "line": 2,
+                    "line": 5,
                     "column": 12
                   },
                   "identifierName": "atMost"
                 },
-                "name": "atMost"
+                "name": "atMost",
+                "leadingComments": null
               },
               "init": {
                 "type": "Identifier",
-                "start": 47,
-                "end": 49,
+                "start": 78,
+                "end": 80,
                 "loc": {
                   "start": {
-                    "line": 2,
+                    "line": 5,
                     "column": 15
                   },
                   "end": {
-                    "line": 2,
+                    "line": 5,
                     "column": 17
                   },
                   "identifierName": "le"
                 },
                 "name": "le"
-              }
+              },
+              "leadingComments": null
             }
           ],
           "kind": "const",
-          "leadingComments": [],
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * Same as {@link le}.\n ",
+              "start": 32,
+              "end": 62,
+              "loc": {
+                "start": {
+                  "line": 2,
+                  "column": 0
+                },
+                "end": {
+                  "line": 4,
+                  "column": 3
+                }
+              }
+            }
+          ],
           "trailingComments": []
         }
       }
     ],
     "directives": []
   },
-  "comments": [],
+  "comments": [
+    {
+      "type": "CommentBlock",
+      "value": "*\n * Same as {@link le}.\n ",
+      "start": 32,
+      "end": 62,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 4,
+          "column": 3
+        }
+      }
+    }
+  ],
   "tokens": [
     {
       "type": {
@@ -425,6 +481,22 @@
       }
     },
     {
+      "type": "CommentBlock",
+      "value": "*\n * Same as {@link le}.\n ",
+      "start": 32,
+      "end": 62,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 4,
+          "column": 3
+        }
+      }
+    },
+    {
       "type": {
         "label": "const",
         "keyword": "const",
@@ -439,15 +511,15 @@
         "updateContext": null
       },
       "value": "const",
-      "start": 32,
-      "end": 37,
+      "start": 63,
+      "end": 68,
       "loc": {
         "start": {
-          "line": 2,
+          "line": 5,
           "column": 0
         },
         "end": {
-          "line": 2,
+          "line": 5,
           "column": 5
         }
       }
@@ -465,15 +537,15 @@
         "binop": null
       },
       "value": "atMost",
-      "start": 38,
-      "end": 44,
+      "start": 69,
+      "end": 75,
       "loc": {
         "start": {
-          "line": 2,
+          "line": 5,
           "column": 6
         },
         "end": {
-          "line": 2,
+          "line": 5,
           "column": 12
         }
       }
@@ -492,15 +564,15 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 45,
-      "end": 46,
+      "start": 76,
+      "end": 77,
       "loc": {
         "start": {
-          "line": 2,
+          "line": 5,
           "column": 13
         },
         "end": {
-          "line": 2,
+          "line": 5,
           "column": 14
         }
       }
@@ -518,15 +590,15 @@
         "binop": null
       },
       "value": "le",
-      "start": 47,
-      "end": 49,
+      "start": 78,
+      "end": 80,
       "loc": {
         "start": {
-          "line": 2,
+          "line": 5,
           "column": 15
         },
         "end": {
-          "line": 2,
+          "line": 5,
           "column": 17
         }
       }
@@ -544,15 +616,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 49,
-      "end": 50,
+      "start": 80,
+      "end": 81,
       "loc": {
         "start": {
-          "line": 2,
+          "line": 5,
           "column": 17
         },
         "end": {
-          "line": 2,
+          "line": 5,
           "column": 18
         }
       }
@@ -572,15 +644,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 51,
-      "end": 57,
+      "start": 82,
+      "end": 88,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 6,
           "column": 0
         },
         "end": {
-          "line": 3,
+          "line": 6,
           "column": 6
         }
       }
@@ -600,15 +672,15 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 58,
-      "end": 65,
+      "start": 89,
+      "end": 96,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 6,
           "column": 7
         },
         "end": {
-          "line": 3,
+          "line": 6,
           "column": 14
         }
       }
@@ -626,15 +698,15 @@
         "binop": null
       },
       "value": "atMost",
-      "start": 66,
-      "end": 72,
+      "start": 97,
+      "end": 103,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 6,
           "column": 15
         },
         "end": {
-          "line": 3,
+          "line": 6,
           "column": 21
         }
       }
@@ -652,15 +724,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 72,
-      "end": 73,
+      "start": 103,
+      "end": 104,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 6,
           "column": 21
         },
         "end": {
-          "line": 3,
+          "line": 6,
           "column": 22
         }
       }
@@ -678,15 +750,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 74,
-      "end": 74,
+      "start": 105,
+      "end": 105,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 7,
           "column": 0
         },
         "end": {
-          "line": 4,
+          "line": 7,
           "column": 0
         }
       }
