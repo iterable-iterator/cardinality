@@ -12,8 +12,7 @@ cardinality.count( "abc"[Symbol.iterator]( ) ) ; // 3
 [![License](https://img.shields.io/github/license/iterable-iterator/cardinality.svg)](https://raw.githubusercontent.com/iterable-iterator/cardinality/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@iterable-iterator/cardinality.svg)](https://www.npmjs.org/package/@iterable-iterator/cardinality)
 [![Tests](https://img.shields.io/github/workflow/status/iterable-iterator/cardinality/ci:test?event=push&label=tests)](https://github.com/iterable-iterator/cardinality/actions/workflows/ci:test.yml?query=branch:main)
-[![Dependencies](https://img.shields.io/david/iterable-iterator/cardinality.svg)](https://david-dm.org/iterable-iterator/cardinality)
-[![Dev dependencies](https://img.shields.io/david/dev/iterable-iterator/cardinality.svg)](https://david-dm.org/iterable-iterator/cardinality?type=dev)
+[![Dependencies](https://img.shields.io/librariesio/github/iterable-iterator/cardinality.svg)](https://github.com/iterable-iterator/cardinality/network/dependencies)
 [![GitHub issues](https://img.shields.io/github/issues/iterable-iterator/cardinality.svg)](https://github.com/iterable-iterator/cardinality/issues)
 [![Downloads](https://img.shields.io/npm/dm/@iterable-iterator/cardinality.svg)](https://www.npmjs.org/package/@iterable-iterator/cardinality)
 
