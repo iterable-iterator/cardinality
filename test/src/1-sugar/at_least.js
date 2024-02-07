@@ -3,7 +3,7 @@ import test from 'ava';
 import {iter} from '@iterable-iterator/iter';
 import {repeat} from '@iterable-iterator/repeat';
 
-import {atLeast} from '../../../src/index.js';
+import {atLeast} from '#module';
 
 test('atLeast', (t) => {
 	t.true(atLeast(1000, repeat('A')));

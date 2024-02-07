@@ -2,7 +2,7 @@ import test from 'ava';
 
 import {iter} from '@iterable-iterator/iter';
 
-import {count} from '../../../src/index.js';
+import {count} from '#module';
 
 test('count', (t) => {
 	// The following would loop forever:

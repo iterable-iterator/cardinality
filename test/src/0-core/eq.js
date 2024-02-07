@@ -3,7 +3,7 @@ import test from 'ava';
 import {iter} from '@iterable-iterator/iter';
 import {repeat} from '@iterable-iterator/repeat';
 
-import {eq} from '../../../src/index.js';
+import {eq} from '#module';
 
 test('eq', (t) => {
 	t.true(!eq(1000, repeat('A')));

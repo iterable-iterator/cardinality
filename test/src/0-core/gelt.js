@@ -3,7 +3,7 @@ import test from 'ava';
 import {iter} from '@iterable-iterator/iter';
 import {repeat} from '@iterable-iterator/repeat';
 
-import {gelt} from '../../../src/index.js';
+import {gelt} from '#module';
 
 test('gelt', (t) => {
 	t.true(!gelt(0, 1000, repeat('A')));

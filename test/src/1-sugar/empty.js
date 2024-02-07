@@ -2,7 +2,7 @@ import test from 'ava';
 
 import {iter} from '@iterable-iterator/iter';
 
-import {isEmpty} from '../../../src/index.js';
+import {isEmpty} from '#module';
 
 test('isEmpty', (t) => {
 	t.true(isEmpty(''));

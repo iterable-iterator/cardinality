@@ -3,7 +3,7 @@ import test from 'ava';
 import {iter} from '@iterable-iterator/iter';
 import {repeat} from '@iterable-iterator/repeat';
 
-import {ne} from '../../../src/index.js';
+import {ne} from '#module';
 
 test('ne', (t) => {
 	t.true(ne(1000, repeat('A')));

@@ -3,7 +3,7 @@ import test from 'ava';
 import {iter} from '@iterable-iterator/iter';
 import {repeat} from '@iterable-iterator/repeat';
 
-import {between} from '../../../src/index.js';
+import {between} from '#module';
 
 test('between', (t) => {
 	t.true(!between(0, 1000, repeat('A')));

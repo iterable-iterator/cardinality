@@ -3,7 +3,7 @@ import test from 'ava';
 import {iter} from '@iterable-iterator/iter';
 import {repeat} from '@iterable-iterator/repeat';
 
-import {lt} from '../../../src/index.js';
+import {lt} from '#module';
 
 test('lt', (t) => {
 	t.true(!lt(1000, repeat('A')));

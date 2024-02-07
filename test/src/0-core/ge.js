@@ -3,7 +3,7 @@ import test from 'ava';
 import {iter} from '@iterable-iterator/iter';
 import {repeat} from '@iterable-iterator/repeat';
 
-import {ge} from '../../../src/index.js';
+import {ge} from '#module';
 
 test('ge', (t) => {
 	t.true(ge(1000, repeat('A')));
