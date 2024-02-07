@@ -1,5 +1,4 @@
 import test from 'ava';
-
 import {iter} from '@iterable-iterator/iter';
 import {repeat} from '@iterable-iterator/repeat';
 
